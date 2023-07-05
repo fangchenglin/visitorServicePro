@@ -1,6 +1,7 @@
 package com.sx.visitorService.service;
 
 import com.sx.visitorService.entity.Suit;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
@@ -53,4 +54,8 @@ public interface SuitService {
      */
     boolean deleteById(Integer sId);
 
+    //提交表单
+    DataResult deal(Suit suit);
+
+    DataResult suit(Suit suit);
 }
