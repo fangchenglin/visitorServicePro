@@ -1,14 +1,18 @@
 package com.sx.visitorService.service.impl;
 
+import com.sx.visitorService.entity.Person;
 import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.dao.SuitDao;
 import com.sx.visitorService.service.SuitService;
+import com.sx.visitorService.utils.result.DataResult;
+import com.sx.visitorService.utils.result.code.Code;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 /**
  * (Suit)表服务实现类
@@ -20,6 +24,9 @@ import javax.annotation.Resource;
 public class SuitServiceImpl implements SuitService {
     @Resource
     private SuitDao suitDao;
+
+    @Resource
+    HttpSession session;
 
     /**
      * 通过ID查询单条数据
@@ -79,4 +86,20 @@ public class SuitServiceImpl implements SuitService {
     public boolean deleteById(Integer sId) {
         return this.suitDao.deleteById(sId) > 0;
     }
+
+    @Override
+    public DataResult deal(Suit suit) {
+        int insert_suit = suitDao.insert(suit);
+        return DataResult.successByData(suit);
+    }
+
+    //提交表单
+    @Override
+    public DataResult suit(Suit suit){
+        int insert_suit = suitDao.insert(suit);
+        return DataResult.successByData(suit);
+    }
+
+
+
 }

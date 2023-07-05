@@ -1,6 +1,7 @@
 package com.sx.visitorService.dao;
 
 import com.sx.visitorService.entity.Suit;
+import com.sx.visitorService.service.SuitService;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
@@ -81,5 +82,8 @@ public interface SuitDao {
      */
     int deleteById(Integer sId);
 
+    Suit deal(Suit suit);
+
+    Suit suit(Suit suit);
 }
 
