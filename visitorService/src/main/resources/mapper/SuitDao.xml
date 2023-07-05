@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sx.visitorService.dao.SuitDao">
+
+    <resultMap type="com.sx.visitorService.entity.Suit" id="SuitMap">
+        <result property="sId" column="s_id" jdbcType="INTEGER"/>
+        <result property="submitId" column="submit_id" jdbcType="INTEGER"/>
+        <result property="dealId" column="deal_id" jdbcType="INTEGER"/>
+        <result property="submitContext" column="submit_context" jdbcType="VARCHAR"/>
+        <result property="submitIma" column="submit_ima" jdbcType="VARCHAR"/>
+        <result property="submitVideo" column="submit_video" jdbcType="VARCHAR"/>
+        <result property="assess" column="assess" jdbcType="INTEGER"/>
+        <result property="dealContext" column="deal_context" jdbcType="VARCHAR"/>
+        <result property="dealIma" column="deal_ima" jdbcType="VARCHAR"/>
+        <result property="dealVideo" column="deal_video" jdbcType="VARCHAR"/>
+        <result property="state" column="state" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="SuitMap">
+        select
+          s_id, submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state
+        from suit
+        where s_id = #{sId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="SuitMap">
+        select
+          s_id, submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state
+        from suit
+        <where>
+            <if test="sId != null">
+                and s_id = #{sId}
+            </if>
+            <if test="submitId != null">
+                and submit_id = #{submitId}
+            </if>
+            <if test="dealId != null">
+                and deal_id = #{dealId}
+            </if>
+            <if test="submitContext != null and submitContext != ''">
+                and submit_context = #{submitContext}
+            </if>
+            <if test="submitIma != null and submitIma != ''">
+                and submit_ima = #{submitIma}
+            </if>
+            <if test="submitVideo != null and submitVideo != ''">
+                and submit_video = #{submitVideo}
+            </if>
+            <if test="assess != null">
+                and assess = #{assess}
+            </if>
+            <if test="dealContext != null and dealContext != ''">
+                and deal_context = #{dealContext}
+            </if>
+            <if test="dealIma != null and dealIma != ''">
+                and deal_ima = #{dealIma}
+            </if>
+            <if test="dealVideo != null and dealVideo != ''">
+                and deal_video = #{dealVideo}
+            </if>
+            <if test="state != null">
+                and state = #{state}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from suit
+        <where>
+            <if test="sId != null">
+                and s_id = #{sId}
+            </if>
+            <if test="submitId != null">
+                and submit_id = #{submitId}
+            </if>
+            <if test="dealId != null">
+                and deal_id = #{dealId}
+            </if>
+            <if test="submitContext != null and submitContext != ''">
+                and submit_context = #{submitContext}
+            </if>
+            <if test="submitIma != null and submitIma != ''">
+                and submit_ima = #{submitIma}
+            </if>
+            <if test="submitVideo != null and submitVideo != ''">
+                and submit_video = #{submitVideo}
+            </if>
+            <if test="assess != null">
+                and assess = #{assess}
+            </if>
+            <if test="dealContext != null and dealContext != ''">
+                and deal_context = #{dealContext}
+            </if>
+            <if test="dealIma != null and dealIma != ''">
+                and deal_ima = #{dealIma}
+            </if>
+            <if test="dealVideo != null and dealVideo != ''">
+                and deal_video = #{dealVideo}
+            </if>
+            <if test="state != null">
+                and state = #{state}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="sId" useGeneratedKeys="true">
+        insert into suit(submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state)
+        values (#{submitId}, #{dealId}, #{submitContext}, #{submitIma}, #{submitVideo}, #{assess}, #{dealContext}, #{dealIma}, #{dealVideo}, #{state})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="sId" useGeneratedKeys="true">
+        insert into suit(submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.submitId}, #{entity.dealId}, #{entity.submitContext}, #{entity.submitIma}, #{entity.submitVideo}, #{entity.assess}, #{entity.dealContext}, #{entity.dealIma}, #{entity.dealVideo}, #{entity.state})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="sId" useGeneratedKeys="true">
+        insert into suit(submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.submitId}, #{entity.dealId}, #{entity.submitContext}, #{entity.submitIma}, #{entity.submitVideo}, #{entity.assess}, #{entity.dealContext}, #{entity.dealIma}, #{entity.dealVideo}, #{entity.state})
+        </foreach>
+        on duplicate key update
+        submit_id = values(submit_id),
+        deal_id = values(deal_id),
+        submit_context = values(submit_context),
+        submit_ima = values(submit_ima),
+        submit_video = values(submit_video),
+        assess = values(assess),
+        deal_context = values(deal_context),
+        deal_ima = values(deal_ima),
+        deal_video = values(deal_video),
+        state = values(state)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update suit
+        <set>
+            <if test="submitId != null">
+                submit_id = #{submitId},
+            </if>
+            <if test="dealId != null">
+                deal_id = #{dealId},
+            </if>
+            <if test="submitContext != null and submitContext != ''">
+                submit_context = #{submitContext},
+            </if>
+            <if test="submitIma != null and submitIma != ''">
+                submit_ima = #{submitIma},
+            </if>
+            <if test="submitVideo != null and submitVideo != ''">
+                submit_video = #{submitVideo},
+            </if>
+            <if test="assess != null">
+                assess = #{assess},
+            </if>
+            <if test="dealContext != null and dealContext != ''">
+                deal_context = #{dealContext},
+            </if>
+            <if test="dealIma != null and dealIma != ''">
+                deal_ima = #{dealIma},
+            </if>
+            <if test="dealVideo != null and dealVideo != ''">
+                deal_video = #{dealVideo},
+            </if>
+            <if test="state != null">
+                state = #{state},
+            </if>
+        </set>
+        where s_id = #{sId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from suit where s_id = #{sId}
+    </delete>
+
+</mapper>
+

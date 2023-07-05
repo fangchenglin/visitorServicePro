@@ -1,0 +1,33 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  tomcat:
+    max-threads: 1000
+    max-connections: 20000
+    accept-count: 8000
+    uri-encoding: UTF-8
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: SXroot2023
+    url: jdbc:mysql://110.41.125.226:3306/sx2023?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+  devtools:
+    restart:
+      enabled: true
+pagehelper:
+  helper-dialect: mysql
+  offset-as-page-num: true
+  row-bounds-with-count: true
+  page-size-zero: true
+  reasonable: false
+
+logging:
+  level:
+    com.scu.springboot: debug
+  config: classpath:logback-spring.xml

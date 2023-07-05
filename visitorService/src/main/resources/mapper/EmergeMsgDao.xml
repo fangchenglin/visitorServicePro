@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sx.visitorService.dao.EmergeMsgDao">
+
+    <resultMap type="com.sx.visitorService.entity.EmergeMsg" id="EmergeMsgMap">
+        <result property="mId" column="m_id" jdbcType="INTEGER"/>
+        <result property="mContext" column="m_context" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="EmergeMsgMap">
+        select
+          m_id, m_context
+        from emerge_msg
+        where m_id = #{mId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="EmergeMsgMap">
+        select
+          m_id, m_context
+        from emerge_msg
+        <where>
+            <if test="mId != null">
+                and m_id = #{mId}
+            </if>
+            <if test="mContext != null and mContext != ''">
+                and m_context = #{mContext}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from emerge_msg
+        <where>
+            <if test="mId != null">
+                and m_id = #{mId}
+            </if>
+            <if test="mContext != null and mContext != ''">
+                and m_context = #{mContext}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="mId" useGeneratedKeys="true">
+        insert into emerge_msg(m_context)
+        values (#{mContext})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="mId" useGeneratedKeys="true">
+        insert into emerge_msg(m_context)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.mContext})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="mId" useGeneratedKeys="true">
+        insert into emerge_msg(m_context)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.mContext})
+        </foreach>
+        on duplicate key update
+        m_context = values(m_context)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update emerge_msg
+        <set>
+            <if test="mContext != null and mContext != ''">
+                m_context = #{mContext},
+            </if>
+        </set>
+        where m_id = #{mId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from emerge_msg where m_id = #{mId}
+    </delete>
+
+</mapper>
+

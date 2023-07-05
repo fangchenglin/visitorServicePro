@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sx.visitorService.dao.RoomDao">
+
+    <resultMap type="com.sx.visitorService.entity.Room" id="RoomMap">
+        <result property="rId" column="r_id" jdbcType="INTEGER"/>
+        <result property="capcity" column="capcity" jdbcType="INTEGER"/>
+        <result property="state" column="state" jdbcType="INTEGER"/>
+        <result property="pId" column="p_id" jdbcType="INTEGER"/>
+        <result property="price" column="price" jdbcType="INTEGER"/>
+        <result property="hId" column="h_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="RoomMap">
+        select
+          r_id, capcity, state, p_id, price, h_id
+        from room
+        where r_id = #{rId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="RoomMap">
+        select
+          r_id, capcity, state, p_id, price, h_id
+        from room
+        <where>
+            <if test="rId != null">
+                and r_id = #{rId}
+            </if>
+            <if test="capcity != null">
+                and capcity = #{capcity}
+            </if>
+            <if test="state != null">
+                and state = #{state}
+            </if>
+            <if test="pId != null">
+                and p_id = #{pId}
+            </if>
+            <if test="price != null">
+                and price = #{price}
+            </if>
+            <if test="hId != null">
+                and h_id = #{hId}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from room
+        <where>
+            <if test="rId != null">
+                and r_id = #{rId}
+            </if>
+            <if test="capcity != null">
+                and capcity = #{capcity}
+            </if>
+            <if test="state != null">
+                and state = #{state}
+            </if>
+            <if test="pId != null">
+                and p_id = #{pId}
+            </if>
+            <if test="price != null">
+                and price = #{price}
+            </if>
+            <if test="hId != null">
+                and h_id = #{hId}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="rId" useGeneratedKeys="true">
+        insert into room(capcity, state, p_id, price, h_id)
+        values (#{capcity}, #{state}, #{pId}, #{price}, #{hId})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="rId" useGeneratedKeys="true">
+        insert into room(capcity, state, p_id, price, h_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.capcity}, #{entity.state}, #{entity.pId}, #{entity.price}, #{entity.hId})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="rId" useGeneratedKeys="true">
+        insert into room(capcity, state, p_id, price, h_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.capcity}, #{entity.state}, #{entity.pId}, #{entity.price}, #{entity.hId})
+        </foreach>
+        on duplicate key update
+        capcity = values(capcity),
+        state = values(state),
+        p_id = values(p_id),
+        price = values(price),
+        h_id = values(h_id)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update room
+        <set>
+            <if test="capcity != null">
+                capcity = #{capcity},
+            </if>
+            <if test="state != null">
+                state = #{state},
+            </if>
+            <if test="pId != null">
+                p_id = #{pId},
+            </if>
+            <if test="price != null">
+                price = #{price},
+            </if>
+            <if test="hId != null">
+                h_id = #{hId},
+            </if>
+        </set>
+        where r_id = #{rId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from room where r_id = #{rId}
+    </delete>
+
+</mapper>
+

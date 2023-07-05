@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sx.visitorService.dao.HotelDao">
+
+    <resultMap type="com.sx.visitorService.entity.Hotel" id="HotelMap">
+        <result property="hId" column="h_id" jdbcType="INTEGER"/>
+        <result property="hName" column="h_name" jdbcType="VARCHAR"/>
+        <result property="hPhone" column="h_phone" jdbcType="VARCHAR"/>
+        <result property="hSite" column="h_site" jdbcType="VARCHAR"/>
+        <result property="hClass" column="h_class" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="HotelMap">
+        select
+          h_id, h_name, h_phone, h_site, h_class
+        from hotel
+        where h_id = #{hId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="HotelMap">
+        select
+          h_id, h_name, h_phone, h_site, h_class
+        from hotel
+        <where>
+            <if test="hId != null">
+                and h_id = #{hId}
+            </if>
+            <if test="hName != null and hName != ''">
+                and h_name = #{hName}
+            </if>
+            <if test="hPhone != null and hPhone != ''">
+                and h_phone = #{hPhone}
+            </if>
+            <if test="hSite != null and hSite != ''">
+                and h_site = #{hSite}
+            </if>
+            <if test="hClass != null">
+                and h_class = #{hClass}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from hotel
+        <where>
+            <if test="hId != null">
+                and h_id = #{hId}
+            </if>
+            <if test="hName != null and hName != ''">
+                and h_name = #{hName}
+            </if>
+            <if test="hPhone != null and hPhone != ''">
+                and h_phone = #{hPhone}
+            </if>
+            <if test="hSite != null and hSite != ''">
+                and h_site = #{hSite}
+            </if>
+            <if test="hClass != null">
+                and h_class = #{hClass}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="hId" useGeneratedKeys="true">
+        insert into hotel(h_name, h_phone, h_site, h_class)
+        values (#{hName}, #{hPhone}, #{hSite}, #{hClass})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="hId" useGeneratedKeys="true">
+        insert into hotel(h_name, h_phone, h_site, h_class)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.hName}, #{entity.hPhone}, #{entity.hSite}, #{entity.hClass})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="hId" useGeneratedKeys="true">
+        insert into hotel(h_name, h_phone, h_site, h_class)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.hName}, #{entity.hPhone}, #{entity.hSite}, #{entity.hClass})
+        </foreach>
+        on duplicate key update
+        h_name = values(h_name),
+        h_phone = values(h_phone),
+        h_site = values(h_site),
+        h_class = values(h_class)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update hotel
+        <set>
+            <if test="hName != null and hName != ''">
+                h_name = #{hName},
+            </if>
+            <if test="hPhone != null and hPhone != ''">
+                h_phone = #{hPhone},
+            </if>
+            <if test="hSite != null and hSite != ''">
+                h_site = #{hSite},
+            </if>
+            <if test="hClass != null">
+                h_class = #{hClass},
+            </if>
+        </set>
+        where h_id = #{hId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from hotel where h_id = #{hId}
+    </delete>
+
+</mapper>
+
