@@ -1,6 +1,7 @@
 package com.sx.visitorService.controller;
 
 import com.sx.visitorService.DTO.SuitDTO;
+import com.sx.visitorService.entity.Person;
 import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.service.SuitService;
 import com.sx.visitorService.utils.PageUtil;
@@ -27,7 +28,12 @@ public class SuitController {
     @Resource
     private SuitService suitService;
 
+    @PostMapping("assessSuit")
 
+    public DataResult assessSuit(@RequestBody Suit suit ){
+        Suit update = this.suitService.update(suit);
+        return DataResult.successByData(update);
+    }
     @PostMapping("listSuit")
     public DataResult queryByPage(@RequestBody SuitDTO suitDTO) {
         Long page = suitDTO.getPage();
