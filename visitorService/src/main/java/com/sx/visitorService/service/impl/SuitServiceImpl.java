@@ -1,5 +1,6 @@
 package com.sx.visitorService.service.impl;
 
+import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.Person;
 import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.dao.SuitDao;
@@ -13,6 +14,7 @@ import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * (Suit)表服务实现类
@@ -42,14 +44,15 @@ public class SuitServiceImpl implements SuitService {
     /**
      * 分页查询
      *
-     * @param suit 筛选条件
-     * @param pageRequest      分页对象
+     * @param suitDTO 筛选条件
+     * @param   
      * @return 查询结果
      */
     @Override
-    public Page<Suit> queryByPage(Suit suit, PageRequest pageRequest) {
-        long total = this.suitDao.count(suit);
-        return new PageImpl<>(this.suitDao.queryAllByLimit(suit, pageRequest), pageRequest, total);
+    public DataResult queryByPage(SuitDTO suitDTO) {
+        long total = this.suitDao.count(suitDTO);
+        List<Suit> suits = this.suitDao.queryAllByLimit(suitDTO);
+        return DataResult.successByTotalData(suits,total);
     }
 
     /**
