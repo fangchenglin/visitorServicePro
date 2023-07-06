@@ -28,7 +28,7 @@ public class SuitController {
     private SuitService suitService;
 
 
-    @PostMapping("listStudent")
+    @PostMapping("listSuit")
     public DataResult queryByPage(@RequestBody SuitDTO suitDTO) {
         Long page = suitDTO.getPage();
         Long limit = suitDTO.getLimit();
