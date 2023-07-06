@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/shixiproject.iml" filepath="$PROJECT_DIR$/.idea/shixiproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/visitorService/springboot.iml" filepath="$PROJECT_DIR$/visitorService/springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/visitorService/visitorService.iml" filepath="$PROJECT_DIR$/visitorService/visitorService.iml" />
     </modules>
   </component>

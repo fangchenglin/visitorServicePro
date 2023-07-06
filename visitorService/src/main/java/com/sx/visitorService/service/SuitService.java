@@ -1,6 +1,8 @@
 package com.sx.visitorService.service;
 
+import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.Suit;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
@@ -23,11 +25,10 @@ public interface SuitService {
     /**
      * 分页查询
      *
-     * @param suit 筛选条件
-     * @param pageRequest      分页对象
+     * @param suitDTO 筛选条件
      * @return 查询结果
      */
-    Page<Suit> queryByPage(Suit suit, PageRequest pageRequest);
+    DataResult queryByPage(SuitDTO suitDTO);
 
     /**
      * 新增数据
@@ -53,4 +54,8 @@ public interface SuitService {
      */
     boolean deleteById(Integer sId);
 
+    //提交表单
+    DataResult deal(Suit suit);
+
+    DataResult suit(Suit suit);
 }

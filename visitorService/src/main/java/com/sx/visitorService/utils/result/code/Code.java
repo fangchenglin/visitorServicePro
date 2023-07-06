@@ -11,5 +11,7 @@ public interface Code {
 	int LOGIN_ERROR	 = Errs.put(-3, "用户名或密码不正确");
 	//用户不存在
 	int NO_EXIST	 = Errs.put(-4, "用户不存在");
-    int REGISTER_ERROR =Errs.put(-5, "注册失败"); ;
+    int REGISTER_ERROR =Errs.put(-5, "注册失败");
+
+	int DEAL_ERROR=Errs.put(-6,"提交失败");
 }

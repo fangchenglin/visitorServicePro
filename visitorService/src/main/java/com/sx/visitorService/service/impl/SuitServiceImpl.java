@@ -1,14 +1,20 @@
 package com.sx.visitorService.service.impl;
 
+import com.sx.visitorService.DTO.SuitDTO;
+import com.sx.visitorService.entity.Person;
 import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.dao.SuitDao;
 import com.sx.visitorService.service.SuitService;
+import com.sx.visitorService.utils.result.DataResult;
+import com.sx.visitorService.utils.result.code.Code;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * (Suit)表服务实现类
@@ -20,6 +26,9 @@ import javax.annotation.Resource;
 public class SuitServiceImpl implements SuitService {
     @Resource
     private SuitDao suitDao;
+
+    @Resource
+    HttpSession session;
 
     /**
      * 通过ID查询单条数据
@@ -35,14 +44,15 @@ public class SuitServiceImpl implements SuitService {
     /**
      * 分页查询
      *
-     * @param suit 筛选条件
-     * @param pageRequest      分页对象
+     * @param suitDTO 筛选条件
+     * @param   
      * @return 查询结果
      */
     @Override
-    public Page<Suit> queryByPage(Suit suit, PageRequest pageRequest) {
-        long total = this.suitDao.count(suit);
-        return new PageImpl<>(this.suitDao.queryAllByLimit(suit, pageRequest), pageRequest, total);
+    public DataResult queryByPage(SuitDTO suitDTO) {
+        long total = this.suitDao.count(suitDTO);
+        List<Suit> suits = this.suitDao.queryAllByLimit(suitDTO);
+        return DataResult.successByTotalData(suits,total);
     }
 
     /**
@@ -79,4 +89,20 @@ public class SuitServiceImpl implements SuitService {
     public boolean deleteById(Integer sId) {
         return this.suitDao.deleteById(sId) > 0;
     }
+
+    @Override
+    public DataResult deal(Suit suit) {
+        int insert_suit = suitDao.insert(suit);
+        return DataResult.successByData(suit);
+    }
+
+    //提交表单
+    @Override
+    public DataResult suit(Suit suit){
+        int insert_suit = suitDao.insert(suit);
+        return DataResult.successByData(suit);
+    }
+
+
+
 }

@@ -64,8 +64,9 @@
                 and state = #{state}
             </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
-    </select>
+        order by s_id desc
+        limit #{page}, #{limit}
+        </select>
 
     <!--统计总行数-->
     <select id="count" resultType="java.lang.Long">

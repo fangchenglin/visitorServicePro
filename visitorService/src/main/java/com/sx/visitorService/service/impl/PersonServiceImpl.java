@@ -26,9 +26,9 @@ public class PersonServiceImpl implements PersonService {
     private PersonDao personDao;
 
 
-
     @Resource
     HttpSession session;
+
     /**
      * 通过ID查询单条数据
      *
@@ -43,8 +43,8 @@ public class PersonServiceImpl implements PersonService {
     /**
      * 分页查询
      *
-     * @param person 筛选条件
-     * @param pageRequest      分页对象
+     * @param person      筛选条件
+     * @param pageRequest 分页对象
      * @return 查询结果
      */
     @Override
@@ -93,33 +93,35 @@ public class PersonServiceImpl implements PersonService {
     public DataResult register(Person person) {
 
         Person registerPerson = personDao.register(person);
-        if(registerPerson!= null){
+        if (registerPerson != null) {
             return DataResult.errByErrCode(Code.REGISTER_ERROR);
 
         }
-        int insert_person=personDao.insert(person);
-        session.setAttribute("user",person);
+        int insert_person = personDao.insert(person);
+        session.setAttribute("user", person);
         session.setMaxInactiveInterval(60 * 60 * 24);
         return DataResult.successByData(person);
     }
-        public DataResult loginUser(Person person){
-            //判断参数
-            if(VerifyUtil.isNull(person.getPPhone()) || VerifyUtil.isNull(person.getPassword())){
-                return DataResult.errByErrCode(Code.LOGIN_ERROR);
-            }
-            //查询用户
-            Person loginUser = personDao.loginUser(person);
-            if(loginUser == null){
-                return DataResult.errByErrCode(Code.NO_EXIST);
-            }
-            //登陆成功
-            loginUser.setPassword("");
-            //将用户信息存入session
-            session.setAttribute("person",loginUser);
-            session.setMaxInactiveInterval(60 * 60 * 24);
-            //查询当前用户可以看到的菜单
+    @Override
 
-            //整理返回数据
-            return DataResult.successByData(loginUser);
+    public DataResult loginUser(Person person) {
+        //判断参数
+        if (VerifyUtil.isNull(person.getPPhone()) || VerifyUtil.isNull(person.getPassword())) {
+            return DataResult.errByErrCode(Code.LOGIN_ERROR);
         }
+        //查询用户
+        Person loginUser = personDao.loginUser(person);
+        if (loginUser == null) {
+            return DataResult.errByErrCode(Code.NO_EXIST);
+        }
+        //登陆成功
+        loginUser.setPassword("");
+        //将用户信息存入session
+        session.setAttribute("person", loginUser);
+        session.setMaxInactiveInterval(60 * 60 * 24);
+        //查询当前用户可以看到的菜单
+
+        //整理返回数据
+        return DataResult.successByData(loginUser);
+    }
 }

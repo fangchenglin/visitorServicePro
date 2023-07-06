@@ -1,7 +1,11 @@
 package com.sx.visitorService.controller;
 
+import com.sx.visitorService.DTO.SuitDTO;
+import com.sx.visitorService.entity.Person;
 import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.service.SuitService;
+import com.sx.visitorService.utils.PageUtil;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
@@ -24,17 +28,50 @@ public class SuitController {
     @Resource
     private SuitService suitService;
 
-    /**
-     * 分页查询
-     *
-     * @param suit 筛选条件
-     * @param pageRequest      分页对象
-     * @return 查询结果
+    /*
+
      */
-    @GetMapping
-    public ResponseEntity<Page<Suit>> queryByPage(Suit suit, PageRequest pageRequest) {
-        return ResponseEntity.ok(this.suitService.queryByPage(suit, pageRequest));
+    @PostMapping("assessSuit")
+
+    public DataResult assessSuit(@RequestBody Suit suit ){
+        suit.setState(4);
+        Suit update = this.suitService.update(suit);
+
+        return DataResult.successByData(update);
     }
+
+    @PostMapping("fillSuit")
+    public DataResult fillSuit(@RequestBody Suit suit){
+        suit.setState(5);
+        Suit update = this.suitService.update(suit);
+        return DataResult.successByData(update);
+    }
+    @PostMapping("listSuit")
+    public DataResult queryByPage(@RequestBody SuitDTO suitDTO) {
+        Long page = suitDTO.getPage();
+        Long limit = suitDTO.getLimit();
+        Long startPage = PageUtil.getStartPage(page, limit);
+        suitDTO.setPage(startPage);
+        DataResult dataResult = this.suitService.queryByPage(suitDTO);
+        return dataResult;
+    }
+
+
+    @PostMapping("undoSuit")
+    public DataResult undoSuit(@RequestBody Suit suit) {
+        boolean b= this.suitService.deleteById(suit.getSId());
+        if(b){
+            return DataResult.succ();
+        }
+        return  DataResult.err();
+    }
+
+    @PostMapping("allocSuit")
+    public  DataResult allocSuit(@RequestBody Suit suit){
+        Suit update = this.suitService.update(suit);
+        return DataResult.successByData(update);
+    }
+
 
     /**
      * 通过主键查询单条数据
