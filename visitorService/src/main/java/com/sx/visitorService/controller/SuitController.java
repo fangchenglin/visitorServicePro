@@ -28,9 +28,21 @@ public class SuitController {
     @Resource
     private SuitService suitService;
 
+    /*
+
+     */
     @PostMapping("assessSuit")
 
     public DataResult assessSuit(@RequestBody Suit suit ){
+        suit.setState(4);
+        Suit update = this.suitService.update(suit);
+
+        return DataResult.successByData(update);
+    }
+
+    @PostMapping("fillSuit")
+    public DataResult fillSuit(@RequestBody Suit suit){
+        suit.setState(5);
         Suit update = this.suitService.update(suit);
         return DataResult.successByData(update);
     }
@@ -43,17 +55,23 @@ public class SuitController {
         DataResult dataResult = this.suitService.queryByPage(suitDTO);
         return dataResult;
     }
-//    /**
-//     * 分页查询
-//     *
-//     * @param suit 筛选条件
-//     * @param pageRequest      分页对象
-//     * @return 查询结果
-//     */
-//    @GetMapping
-//    public ResponseEntity<Page<Suit>> queryByPage(Suit suit, PageRequest pageRequest) {
-//        return ResponseEntity.ok(this.suitService.queryByPage(suit, pageRequest));
-//    }
+
+
+    @PostMapping("undoSuit")
+    public DataResult undoSuit(@RequestBody Suit suit) {
+        boolean b= this.suitService.deleteById(suit.getSId());
+        if(b){
+            return DataResult.succ();
+        }
+        return  DataResult.err();
+    }
+
+    @PostMapping("allocSuit")
+    public  DataResult allocSuit(@RequestBody Suit suit){
+        Suit update = this.suitService.update(suit);
+        return DataResult.successByData(update);
+    }
+
 
     /**
      * 通过主键查询单条数据
