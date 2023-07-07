@@ -1,21 +1,13 @@
 package com.sx.visitorService.service.impl;
 
 import com.sx.visitorService.DTO.HotelDTO;
-import com.sx.visitorService.DTO.suitWithName;
 import com.sx.visitorService.entity.Hotel;
 import com.sx.visitorService.dao.HotelDao;
-import com.sx.visitorService.entity.Person;
-import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.service.HotelService;
 import com.sx.visitorService.utils.result.DataResult;
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -69,7 +61,7 @@ public class HotelServiceImpl implements HotelService {
     @Override
     public Hotel update(Hotel hotel) {
         this.hotelDao.update(hotel);
-        return this.queryById(hotel.getHId());
+        return this.queryById(hotel.getHotelId());
     }
 
     /**
