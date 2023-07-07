@@ -109,7 +109,7 @@ public class SuitServiceImpl implements SuitService {
 
     @Override
     public DataResult deal(Suit suit) {
-        int insert_suit = suitDao.insert(suit);
+        int insert_suit = suitDao.update(suit);
         return DataResult.successByData(suit);
     }
 
