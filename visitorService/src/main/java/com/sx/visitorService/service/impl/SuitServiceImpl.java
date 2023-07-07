@@ -63,8 +63,10 @@ public class SuitServiceImpl implements SuitService {
             Person dealer = personDao.queryById(i.getDealId());
             suitWithName j= new suitWithName();
             BeanUtils.copyProperties(i,j);
+            if(dealer!=null){
+                j.setDealerName(dealer.getPName());
+            }
 
-            j.setDealerName(dealer.getPName());
             j.setSubmitName(submit.getPName());
             j.setSubmitPhone(submit.getPPhone());
             suitWithNames.add(j);
