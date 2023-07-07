@@ -11,7 +11,7 @@ import java.io.Serializable;
 public class Suit implements Serializable {
     private static final long serialVersionUID = 257618745811842842L;
     
-    private Integer sId;
+    private Integer suitId;
     
     private Integer submitId;
     
@@ -38,12 +38,12 @@ public class Suit implements Serializable {
     private Integer state;
 
 
-    public Integer getSId() {
-        return sId;
+    public Integer getSuitId() {
+        return suitId;
     }
 
-    public void setSId(Integer sId) {
-        this.sId = sId;
+    public void setSuitId(Integer sId) {
+        this.suitId = sId;
     }
 
     public Integer getSubmitId() {

@@ -11,25 +11,25 @@ import java.io.Serializable;
 public class Room implements Serializable {
     private static final long serialVersionUID = -40856249678167819L;
     
-    private Integer rId;
+    private Integer roomId;
     
     private Integer capcity;
     
     private Integer state;
     
-    private Integer pId;
+    private Integer personId;
     
     private Integer price;
     
-    private Integer hId;
+    private Integer hotelId;
 
 
-    public Integer getRId() {
-        return rId;
+    public Integer getRoomId() {
+        return roomId;
     }
 
-    public void setRId(Integer rId) {
-        this.rId = rId;
+    public void setRoomId(Integer roomId) {
+        this.roomId = roomId;
     }
 
     public Integer getCapcity() {
@@ -48,12 +48,12 @@ public class Room implements Serializable {
         this.state = state;
     }
 
-    public Integer getPId() {
-        return pId;
+    public Integer getPersonId() {
+        return personId;
     }
 
-    public void setPId(Integer pId) {
-        this.pId = pId;
+    public void setPersonId(Integer personId) {
+        this.personId = personId;
     }
 
     public Integer getPrice() {
@@ -64,12 +64,12 @@ public class Room implements Serializable {
         this.price = price;
     }
 
-    public Integer getHId() {
-        return hId;
+    public Integer getHotelId() {
+        return hotelId;
     }
 
-    public void setHId(Integer hId) {
-        this.hId = hId;
+    public void setHotelId(Integer hotelId) {
+        this.hotelId = hotelId;
     }
 
 }

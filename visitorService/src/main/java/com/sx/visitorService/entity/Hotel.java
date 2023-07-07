@@ -11,55 +11,55 @@ import java.io.Serializable;
 public class Hotel implements Serializable {
     private static final long serialVersionUID = 818068113639864161L;
     
-    private Integer hId;
+    private Integer hotelId;
     
-    private String hName;
+    private String hotelName;
     
-    private String hPhone;
+    private String hotelPhone;
     
-    private String hSite;
+    private String hotelSite;
     
-    private Integer hClass;
+    private Integer hotelClass;
 
 
-    public Integer getHId() {
-        return hId;
+    public Integer getHotelId() {
+        return hotelId;
     }
 
-    public void setHId(Integer hId) {
-        this.hId = hId;
+    public void setHotelId(Integer hId) {
+        this.hotelId = hId;
     }
 
-    public String getHName() {
-        return hName;
+    public String getHotelName() {
+        return hotelName;
     }
 
-    public void setHName(String hName) {
-        this.hName = hName;
+    public void setHotelName(String hName) {
+        this.hotelName = hName;
     }
 
-    public String getHPhone() {
-        return hPhone;
+    public String getHotelPhone() {
+        return hotelPhone;
     }
 
-    public void setHPhone(String hPhone) {
-        this.hPhone = hPhone;
+    public void setHotelPhone(String hPhone) {
+        this.hotelPhone = hPhone;
     }
 
-    public String getHSite() {
-        return hSite;
+    public String getHotelSite() {
+        return hotelSite;
     }
 
-    public void setHSite(String hSite) {
-        this.hSite = hSite;
+    public void setHotelSite(String hSite) {
+        this.hotelSite = hSite;
     }
 
-    public Integer getHClass() {
-        return hClass;
+    public Integer getHotelClass() {
+        return hotelClass;
     }
 
-    public void setHClass(Integer hClass) {
-        this.hClass = hClass;
+    public void setHotelClass(Integer hClass) {
+        this.hotelClass = hClass;
     }
 
 }
