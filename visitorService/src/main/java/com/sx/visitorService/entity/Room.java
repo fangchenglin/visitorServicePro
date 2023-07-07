@@ -6,14 +6,14 @@ import java.io.Serializable;
  * (Room)实体类
  *
  * @author makejava
- * @since 2023-07-05 12:02:21
+ * @since 2023-07-07 14:41:22
  */
 public class Room implements Serializable {
-    private static final long serialVersionUID = -40856249678167819L;
+    private static final long serialVersionUID = 394139169586428561L;
     
     private Integer roomId;
     
-    private Integer capcity;
+    private Integer capacity;
     
     private Integer state;
     
@@ -22,6 +22,8 @@ public class Room implements Serializable {
     private Integer price;
     
     private Integer hotelId;
+    
+    private Integer roomNumber;
 
 
     public Integer getRoomId() {
@@ -32,12 +34,12 @@ public class Room implements Serializable {
         this.roomId = roomId;
     }
 
-    public Integer getCapcity() {
-        return capcity;
+    public Integer getCapacity() {
+        return capacity;
     }
 
-    public void setCapcity(Integer capcity) {
-        this.capcity = capcity;
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
     }
 
     public Integer getState() {
@@ -70,6 +72,14 @@ public class Room implements Serializable {
 
     public void setHotelId(Integer hotelId) {
         this.hotelId = hotelId;
+    }
+
+    public Integer getRoomNumber() {
+        return roomNumber;
+    }
+
+    public void setRoomNumber(Integer roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
 }
