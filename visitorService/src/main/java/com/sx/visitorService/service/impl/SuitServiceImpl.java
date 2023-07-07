@@ -17,6 +17,7 @@ import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -56,7 +57,7 @@ public class SuitServiceImpl implements SuitService {
     public DataResult queryByPage(SuitDTO suitDTO) {
         long total = this.suitDao.count(suitDTO);
         List<Suit> suits = this.suitDao.queryAllByLimit(suitDTO);
-        List<suitWithName> suitWithNames =null;
+        List<suitWithName> suitWithNames =new ArrayList<>();
         for(Suit i:suits){
             Person submit=personDao.queryById(i.getSubmitId());
             Person dealer = personDao.queryById(i.getDealId());
