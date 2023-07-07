@@ -138,13 +138,13 @@
                   <ColumnInfoDTO>
                     <option name="custom" value="false" />
                     <option name="ext" value="{}" />
-                    <option name="name" value="rId" />
+                    <option name="name" value="roomId" />
                     <option name="type" value="java.lang.Integer" />
                   </ColumnInfoDTO>
                   <ColumnInfoDTO>
                     <option name="custom" value="false" />
                     <option name="ext" value="{}" />
-                    <option name="name" value="capcity" />
+                    <option name="name" value="capacity" />
                     <option name="type" value="java.lang.Integer" />
                   </ColumnInfoDTO>
                   <ColumnInfoDTO>
@@ -156,7 +156,7 @@
                   <ColumnInfoDTO>
                     <option name="custom" value="false" />
                     <option name="ext" value="{}" />
-                    <option name="name" value="pId" />
+                    <option name="name" value="personId" />
                     <option name="type" value="java.lang.Integer" />
                   </ColumnInfoDTO>
                   <ColumnInfoDTO>
@@ -168,7 +168,13 @@
                   <ColumnInfoDTO>
                     <option name="custom" value="false" />
                     <option name="ext" value="{}" />
-                    <option name="name" value="hId" />
+                    <option name="name" value="hotelId" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="roomNumber" />
                     <option name="type" value="java.lang.Integer" />
                   </ColumnInfoDTO>
                 </list>

@@ -1,7 +1,6 @@
 package com.sx.visitorService.dao;
 
 import com.sx.visitorService.entity.Room;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
 import java.util.List;
@@ -10,18 +9,17 @@ import java.util.List;
  * (Room)表数据库访问层
  *
  * @author makejava
- * @since 2023-07-05 12:02:21
+ * @since 2023-07-07 14:41:21
  */
-@Mapper
 public interface RoomDao {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param rId 主键
+     * @param roomId 主键
      * @return 实例对象
      */
-    Room queryById(Integer rId);
+    Room queryById(Integer roomId);
 
     /**
      * 查询指定行数据
@@ -76,10 +74,10 @@ public interface RoomDao {
     /**
      * 通过主键删除数据
      *
-     * @param rId 主键
+     * @param roomId 主键
      * @return 影响行数
      */
-    int deleteById(Integer rId);
+    int deleteById(Integer roomId);
 
 }
 
