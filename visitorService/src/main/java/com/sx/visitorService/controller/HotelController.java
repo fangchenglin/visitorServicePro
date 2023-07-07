@@ -1,5 +1,6 @@
 package com.sx.visitorService.controller;
 
+import com.sx.visitorService.DTO.HotelDTO;
 import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.Hotel;
 import com.sx.visitorService.service.HotelService;
@@ -27,25 +28,25 @@ public class HotelController {
     @Resource
     private HotelService hotelService;
     @PostMapping("listHotel")
-    public DataResult queryByPage(@RequestBody SuitDTO suitDTO) {
-        Long page = suitDTO.getPage();
-        Long limit = suitDTO.getLimit();
+    public DataResult queryByPage(@RequestBody HotelDTO hotelDTO) {
+        Long page = hotelDTO.getPage();
+        Long limit = hotelDTO.getLimit();
         Long startPage = PageUtil.getStartPage(page, limit);
-        suitDTO.setPage(startPage);
-        DataResult dataResult = this.suitService.queryByPage(suitDTO);
+        hotelDTO.setPage(startPage);
+        DataResult dataResult = this.hotelService.queryByPage(hotelDTO);
         return dataResult;
     }
-    /**
-     * 分页查询
-     *
-     * @param hotel 筛选条件
-     * @param pageRequest      分页对象
-     * @return 查询结果
-     */
-    @GetMapping
-    public ResponseEntity<Page<Hotel>> queryByPage(Hotel hotel, PageRequest pageRequest) {
-        return ResponseEntity.ok(this.hotelService.queryByPage(hotel, pageRequest));
-    }
+//    /**
+//     * 分页查询
+//     *
+//     * @param hotel 筛选条件
+//     * @param pageRequest      分页对象
+//     * @return 查询结果
+//     */
+//    @GetMapping
+//    public ResponseEntity<Page<Hotel>> queryByPage(Hotel hotel, PageRequest pageRequest) {
+//        return ResponseEntity.ok(this.hotelService.queryByPage(hotel, pageRequest));
+//    }
 
     /**
      * 通过主键查询单条数据

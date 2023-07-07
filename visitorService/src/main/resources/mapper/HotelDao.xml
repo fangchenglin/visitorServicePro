@@ -40,7 +40,8 @@
                 and h_class = #{hClass}
             </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
+        order by h_id desc
+        limit #{page}, #{limit}
     </select>
 
     <!--统计总行数-->
