@@ -1,13 +1,10 @@
 package com.sx.visitorService.controller;
 
 import com.sx.visitorService.DTO.SuitDTO;
-import com.sx.visitorService.entity.Person;
 import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.service.SuitService;
 import com.sx.visitorService.utils.PageUtil;
 import com.sx.visitorService.utils.result.DataResult;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -59,7 +56,7 @@ public class SuitController {
 
     @PostMapping("undoSuit")
     public DataResult undoSuit(@RequestBody Suit suit) {
-        boolean b= this.suitService.deleteById(suit.getSId());
+        boolean b= this.suitService.deleteById(suit.getSuitId());
         if(b){
             return DataResult.succ();
         }

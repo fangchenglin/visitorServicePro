@@ -3,7 +3,7 @@
 <mapper namespace="com.sx.visitorService.dao.SuitDao">
 
     <resultMap type="com.sx.visitorService.entity.Suit" id="SuitMap">
-        <result property="sId" column="s_id" jdbcType="INTEGER"/>
+        <result property="suitId" column="suit_id" jdbcType="INTEGER"/>
         <result property="submitId" column="submit_id" jdbcType="INTEGER"/>
         <result property="dealId" column="deal_id" jdbcType="INTEGER"/>
         <result property="submitContext" column="submit_context" jdbcType="VARCHAR"/>
@@ -19,19 +19,19 @@
     <!--查询单个-->
     <select id="queryById" resultMap="SuitMap">
         select
-          s_id, submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state
+          suit_id, submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state
         from suit
-        where s_id = #{sId}
+        where suit_id = #{suitId}
     </select>
 
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="SuitMap">
         select
-          s_id, submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state
+          suit_id, submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state
         from suit
         <where>
-            <if test="sId != null">
-                and s_id = #{sId}
+            <if test="suitId != null">
+                and suit_id = #{suitId}
             </if>
             <if test="submitId != null">
                 and submit_id = #{submitId}
@@ -64,7 +64,7 @@
                 and state = #{state}
             </if>
         </where>
-        order by s_id desc
+        order by suit_id desc
         limit #{page}, #{limit}
         </select>
 
@@ -73,8 +73,8 @@
         select count(1)
         from suit
         <where>
-            <if test="sId != null">
-                and s_id = #{sId}
+            <if test="suitId != null">
+                and suit_id = #{suitId}
             </if>
             <if test="submitId != null">
                 and submit_id = #{submitId}
@@ -110,12 +110,12 @@
     </select>
 
     <!--新增所有列-->
-    <insert id="insert" keyProperty="sId" useGeneratedKeys="true">
+    <insert id="insert" keyProperty="suitId" useGeneratedKeys="true">
         insert into suit(submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state)
         values (#{submitId}, #{dealId}, #{submitContext}, #{submitIma}, #{submitVideo}, #{assess}, #{dealContext}, #{dealIma}, #{dealVideo}, #{state})
     </insert>
 
-    <insert id="insertBatch" keyProperty="sId" useGeneratedKeys="true">
+    <insert id="insertBatch" keyProperty="suitId" useGeneratedKeys="true">
         insert into suit(submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state)
         values
         <foreach collection="entities" item="entity" separator=",">
@@ -123,7 +123,7 @@
         </foreach>
     </insert>
 
-    <insert id="insertOrUpdateBatch" keyProperty="sId" useGeneratedKeys="true">
+    <insert id="insertOrUpdateBatch" keyProperty="suitId" useGeneratedKeys="true">
         insert into suit(submit_id, deal_id, submit_context, submit_ima, submit_video, assess, deal_context, deal_ima, deal_video, state)
         values
         <foreach collection="entities" item="entity" separator=",">
@@ -177,12 +177,12 @@
                 state = #{state},
             </if>
         </set>
-        where s_id = #{sId}
+        where suit_id = #{suitId}
     </update>
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from suit where s_id = #{sId}
+        delete from suit where suit_id = #{suitId}
     </delete>
 
 </mapper>

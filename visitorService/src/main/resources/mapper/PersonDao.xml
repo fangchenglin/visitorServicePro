@@ -3,10 +3,10 @@
 <mapper namespace="com.sx.visitorService.dao.PersonDao">
 
     <resultMap type="com.sx.visitorService.entity.Person" id="PersonMap">
-        <result property="pId" column="p_id" jdbcType="INTEGER"/>
-        <result property="pName" column="p_name" jdbcType="VARCHAR"/>
-        <result property="pPower" column="p_power" jdbcType="INTEGER"/>
-        <result property="pPhone" column="p_phone" jdbcType="VARCHAR"/>
+        <result property="personId" column="person_id" jdbcType="INTEGER"/>
+        <result property="personName" column="person_name" jdbcType="VARCHAR"/>
+        <result property="personPower" column="person_power" jdbcType="INTEGER"/>
+        <result property="personPhone" column="person_phone" jdbcType="VARCHAR"/>
         <result property="password" column="password" jdbcType="VARCHAR"/>
         <result property="birth" column="birth" jdbcType="VARCHAR"/>
     </resultMap>
@@ -14,28 +14,28 @@
     <!--查询单个-->
     <select id="queryById" resultMap="PersonMap">
         select
-          p_id, p_name, p_power, p_phone, password, birth
+          person_id, person_name, person_power, person_phone, password, birth
         from person
-        where p_id = #{pId}
+        where person_id = #{personId}
     </select>
 
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="PersonMap">
         select
-          p_id, p_name, p_power, p_phone, password, birth
+          person_id, person_name, person_power, person_phone, password, birth
         from person
         <where>
-            <if test="pId != null">
-                and p_id = #{pId}
+            <if test="personId != null">
+                and person_id = #{personId}
             </if>
-            <if test="pName != null and pName != ''">
-                and p_name = #{pName}
+            <if test="personName != null and personName != ''">
+                and person_name = #{personName}
             </if>
-            <if test="pPower != null">
-                and p_power = #{pPower}
+            <if test="personPower != null">
+                and person_power = #{personPower}
             </if>
-            <if test="pPhone != null and pPhone != ''">
-                and p_phone = #{pPhone}
+            <if test="personPhone != null and personPhone != ''">
+                and person_phone = #{personPhone}
             </if>
             <if test="password != null and password != ''">
                 and password = #{password}
@@ -52,17 +52,17 @@
         select count(1)
         from person
         <where>
-            <if test="pId != null">
-                and p_id = #{pId}
+            <if test="personId != null">
+                and person_id = #{personId}
             </if>
-            <if test="pName != null and pName != ''">
-                and p_name = #{pName}
+            <if test="personName != null and personName != ''">
+                and person_name = #{personName}
             </if>
-            <if test="pPower != null">
-                and p_power = #{pPower}
+            <if test="personPower != null">
+                and person_power = #{personPower}
             </if>
-            <if test="pPhone != null and pPhone != ''">
-                and p_phone = #{pPhone}
+            <if test="personPhone != null and personPhone != ''">
+                and person_phone = #{personPhone}
             </if>
             <if test="password != null and password != ''">
                 and password = #{password}
@@ -74,29 +74,29 @@
     </select>
 
     <!--新增所有列-->
-    <insert id="insert" keyProperty="pId" useGeneratedKeys="true">
-        insert into person(p_name, p_power, p_phone, password, birth)
-        values (#{pName}, #{pPower}, #{pPhone}, #{password}, #{birth})
+    <insert id="insert" keyProperty="personId" useGeneratedKeys="true">
+        insert into person(person_name, person_power, person_phone, password, birth)
+        values (#{personName}, #{personPower}, #{personPhone}, #{password}, #{birth})
     </insert>
 
-    <insert id="insertBatch" keyProperty="pId" useGeneratedKeys="true">
-        insert into person(p_name, p_power, p_phone, password, birth)
+    <insert id="insertBatch" keyProperty="personId" useGeneratedKeys="true">
+        insert into person(person_name, person_power, person_phone, password, birth)
         values
         <foreach collection="entities" item="entity" separator=",">
-        (#{entity.pName}, #{entity.pPower}, #{entity.pPhone}, #{entity.password}, #{entity.birth})
+        (#{entity.personName}, #{entity.personPower}, #{entity.personPhone}, #{entity.password}, #{entity.birth})
         </foreach>
     </insert>
 
-    <insert id="insertOrUpdateBatch" keyProperty="pId" useGeneratedKeys="true">
-        insert into person(p_name, p_power, p_phone, password, birth)
+    <insert id="insertOrUpdateBatch" keyProperty="personId" useGeneratedKeys="true">
+        insert into person(person_name, person_power, person_phone, password, birth)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.pName}, #{entity.pPower}, #{entity.pPhone}, #{entity.password}, #{entity.birth})
+            (#{entity.personName}, #{entity.personPower}, #{entity.personPhone}, #{entity.password}, #{entity.birth})
         </foreach>
         on duplicate key update
-        p_name = values(p_name),
-        p_power = values(p_power),
-        p_phone = values(p_phone),
+        person_name = values(person_name),
+        person_power = values(person_power),
+        person_phone = values(person_phone),
         password = values(password),
         birth = values(birth)
     </insert>
@@ -105,14 +105,14 @@
     <update id="update">
         update person
         <set>
-            <if test="pName != null and pName != ''">
-                p_name = #{pName},
+            <if test="personName != null and personName != ''">
+                person_name = #{personName},
             </if>
-            <if test="pPower != null">
-                p_power = #{pPower},
+            <if test="personPower != null">
+                person_power = #{personPower},
             </if>
-            <if test="pPhone != null and pPhone != ''">
-                p_phone = #{pPhone},
+            <if test="personPhone != null and personPhone != ''">
+                person_phone = #{personPhone},
             </if>
             <if test="password != null and password != ''">
                 password = #{password},
@@ -121,19 +121,19 @@
                 birth = #{birth},
             </if>
         </set>
-        where p_id = #{pId}
+        where person_id = #{personId}
     </update>
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from person where p_id = #{pId}
+        delete from person where person_id = #{personId}
     </delete>
 
     <!--用户注册-->
     <select id="register" resultMap="PersonMap">
     select * from Person
     <where>
-    p_phone = #{pPhone}
+    person_phone = #{personPhone}
     </where>
 
     </select>
@@ -142,7 +142,7 @@
     <select id="loginUser" resultMap="PersonMap">
         select * from person
         <where>
-            p_phone = #{pPhone} and password = #{password}
+            person_phone = #{personPhone} and password = #{password}
         </where>
     </select>
 </mapper>

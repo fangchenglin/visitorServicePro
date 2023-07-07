@@ -74,7 +74,7 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public Person update(Person person) {
         this.personDao.update(person);
-        return this.queryById(person.getPId());
+        return this.queryById(person.getPersonId());
     }
 
     /**
@@ -106,7 +106,7 @@ public class PersonServiceImpl implements PersonService {
 
     public DataResult loginUser(Person person) {
         //判断参数
-        if (VerifyUtil.isNull(person.getPPhone()) || VerifyUtil.isNull(person.getPassword())) {
+        if (VerifyUtil.isNull(person.getPersonPhone()) || VerifyUtil.isNull(person.getPassword())) {
             return DataResult.errByErrCode(Code.LOGIN_ERROR);
         }
         //查询用户
