@@ -1,7 +1,10 @@
 package com.sx.visitorService.controller;
 
+import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.Hotel;
 import com.sx.visitorService.service.HotelService;
+import com.sx.visitorService.utils.PageUtil;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +26,15 @@ public class HotelController {
      */
     @Resource
     private HotelService hotelService;
-
+    @PostMapping("listHotel")
+    public DataResult queryByPage(@RequestBody SuitDTO suitDTO) {
+        Long page = suitDTO.getPage();
+        Long limit = suitDTO.getLimit();
+        Long startPage = PageUtil.getStartPage(page, limit);
+        suitDTO.setPage(startPage);
+        DataResult dataResult = this.suitService.queryByPage(suitDTO);
+        return dataResult;
+    }
     /**
      * 分页查询
      *
