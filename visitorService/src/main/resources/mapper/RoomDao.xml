@@ -3,30 +3,30 @@
 <mapper namespace="com.sx.visitorService.dao.RoomDao">
 
     <resultMap type="com.sx.visitorService.entity.Room" id="RoomMap">
-        <result property="rId" column="r_id" jdbcType="INTEGER"/>
+        <result property="roomId" column="room_id" jdbcType="INTEGER"/>
         <result property="capcity" column="capcity" jdbcType="INTEGER"/>
         <result property="state" column="state" jdbcType="INTEGER"/>
-        <result property="pId" column="p_id" jdbcType="INTEGER"/>
+        <result property="personId" column="person_id" jdbcType="INTEGER"/>
         <result property="price" column="price" jdbcType="INTEGER"/>
-        <result property="hId" column="h_id" jdbcType="INTEGER"/>
+        <result property="hotelId" column="hotel_id" jdbcType="INTEGER"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="RoomMap">
         select
-          r_id, capcity, state, p_id, price, h_id
+          room_id, capcity, state, person_id, price, hotel_id
         from room
-        where r_id = #{rId}
+        where room_id = #{roomId}
     </select>
 
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="RoomMap">
         select
-          r_id, capcity, state, p_id, price, h_id
+          room_id, capcity, state, person_id, price, hotel_id
         from room
         <where>
-            <if test="rId != null">
-                and r_id = #{rId}
+            <if test="roomId != null">
+                and room_id = #{roomId}
             </if>
             <if test="capcity != null">
                 and capcity = #{capcity}
@@ -34,14 +34,14 @@
             <if test="state != null">
                 and state = #{state}
             </if>
-            <if test="pId != null">
-                and p_id = #{pId}
+            <if test="personId != null">
+                and person_id = #{personId}
             </if>
             <if test="price != null">
                 and price = #{price}
             </if>
-            <if test="hId != null">
-                and h_id = #{hId}
+            <if test="hotelId != null">
+                and hotel_id = #{hotelId}
             </if>
         </where>
         limit #{pageable.offset}, #{pageable.pageSize}
@@ -52,8 +52,8 @@
         select count(1)
         from room
         <where>
-            <if test="rId != null">
-                and r_id = #{rId}
+            <if test="roomId != null">
+                and room_id = #{roomId}
             </if>
             <if test="capcity != null">
                 and capcity = #{capcity}
@@ -61,44 +61,44 @@
             <if test="state != null">
                 and state = #{state}
             </if>
-            <if test="pId != null">
-                and p_id = #{pId}
+            <if test="personId != null">
+                and person_id = #{personId}
             </if>
             <if test="price != null">
                 and price = #{price}
             </if>
-            <if test="hId != null">
-                and h_id = #{hId}
+            <if test="hotelId != null">
+                and hotel_id = #{hotelId}
             </if>
         </where>
     </select>
 
     <!--新增所有列-->
-    <insert id="insert" keyProperty="rId" useGeneratedKeys="true">
-        insert into room(capcity, state, p_id, price, h_id)
-        values (#{capcity}, #{state}, #{pId}, #{price}, #{hId})
+    <insert id="insert" keyProperty="roomId" useGeneratedKeys="true">
+        insert into room(capcity, state, person_id, price, hotel_id)
+        values (#{capcity}, #{state}, #{personId}, #{price}, #{hotelId})
     </insert>
 
-    <insert id="insertBatch" keyProperty="rId" useGeneratedKeys="true">
-        insert into room(capcity, state, p_id, price, h_id)
+    <insert id="insertBatch" keyProperty="roomId" useGeneratedKeys="true">
+        insert into room(capcity, state, person_id, price, hotel_id)
         values
         <foreach collection="entities" item="entity" separator=",">
-        (#{entity.capcity}, #{entity.state}, #{entity.pId}, #{entity.price}, #{entity.hId})
+        (#{entity.capcity}, #{entity.state}, #{entity.personId}, #{entity.price}, #{entity.hotelId})
         </foreach>
     </insert>
 
-    <insert id="insertOrUpdateBatch" keyProperty="rId" useGeneratedKeys="true">
-        insert into room(capcity, state, p_id, price, h_id)
+    <insert id="insertOrUpdateBatch" keyProperty="roomId" useGeneratedKeys="true">
+        insert into room(capcity, state, person_id, price, hotel_id)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.capcity}, #{entity.state}, #{entity.pId}, #{entity.price}, #{entity.hId})
+            (#{entity.capcity}, #{entity.state}, #{entity.personId}, #{entity.price}, #{entity.hotelId})
         </foreach>
         on duplicate key update
         capcity = values(capcity),
         state = values(state),
-        p_id = values(p_id),
+        person_id = values(person_id),
         price = values(price),
-        h_id = values(h_id)
+        hotel_id = values(hotel_id)
     </insert>
 
     <!--通过主键修改数据-->
@@ -111,22 +111,22 @@
             <if test="state != null">
                 state = #{state},
             </if>
-            <if test="pId != null">
-                p_id = #{pId},
+            <if test="personId != null">
+                person_id = #{personId},
             </if>
             <if test="price != null">
                 price = #{price},
             </if>
-            <if test="hId != null">
-                h_id = #{hId},
+            <if test="hotelId != null">
+                hotel_id = #{hotelId},
             </if>
         </set>
-        where r_id = #{rId}
+        where room_id = #{roomId}
     </update>
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from room where r_id = #{rId}
+        delete from room where room_id = #{roomId}
     </delete>
 
 </mapper>

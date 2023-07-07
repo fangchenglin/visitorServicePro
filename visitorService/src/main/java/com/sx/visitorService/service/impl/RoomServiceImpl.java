@@ -66,7 +66,7 @@ public class RoomServiceImpl implements RoomService {
     @Override
     public Room update(Room room) {
         this.roomDao.update(room);
-        return this.queryById(room.getRId());
+        return this.queryById(room.getRoomId());
     }
 
     /**
