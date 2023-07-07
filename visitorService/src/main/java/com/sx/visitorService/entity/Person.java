@@ -11,51 +11,51 @@ import java.io.Serializable;
 public class Person implements Serializable {
     private static final long serialVersionUID = 909529084913365238L;
     
-    private Integer pId;
+    private Integer personId;
     
-    private String pName;
+    private String personName;
     /**
      * 0：未登录用户  1：游客  2：处理  3：管理  4：审批 5：酒店
      */
-    private Integer pPower;
+    private Integer personPower;
     
-    private String pPhone;
+    private String personPhone;
     
     private String password;
     
     private String birth;
 
 
-    public Integer getPId() {
-        return pId;
+    public Integer getPersonId() {
+        return personId;
     }
 
-    public void setPId(Integer pId) {
-        this.pId = pId;
+    public void setPersonId(Integer personId) {
+        this.personId = personId;
     }
 
-    public String getPName() {
-        return pName;
+    public String getPersonName() {
+        return personName;
     }
 
-    public void setPName(String pName) {
-        this.pName = pName;
+    public void setPersonName(String personName) {
+        this.personName = personName;
     }
 
-    public Integer getPPower() {
-        return pPower;
+    public Integer getPersonPower() {
+        return personPower;
     }
 
-    public void setPPower(Integer pPower) {
-        this.pPower = pPower;
+    public void setPersonPower(Integer personPower) {
+        this.personPower = personPower;
     }
 
-    public String getPPhone() {
-        return pPhone;
+    public String getPersonPhone() {
+        return personPhone;
     }
 
-    public void setPPhone(String pPhone) {
-        this.pPhone = pPhone;
+    public void setPersonPhone(String pPhone) {
+        this.personPhone = pPhone;
     }
 
     public String getPassword() {
