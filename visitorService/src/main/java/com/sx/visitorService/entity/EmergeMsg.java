@@ -11,25 +11,25 @@ import java.io.Serializable;
 public class EmergeMsg implements Serializable {
     private static final long serialVersionUID = -81594206977684526L;
     
-    private Integer mId;
+    private Integer emergeId;
     
-    private String mContext;
+    private String emergeContext;
 
 
-    public Integer getMId() {
-        return mId;
+    public Integer getEmergeId() {
+        return emergeId;
     }
 
-    public void setMId(Integer mId) {
-        this.mId = mId;
+    public void setEmergeId(Integer mId) {
+        this.emergeId = mId;
     }
 
-    public String getMContext() {
-        return mContext;
+    public String getEmergeContext() {
+        return emergeContext;
     }
 
-    public void setMContext(String mContext) {
-        this.mContext = mContext;
+    public void setEmergeContext(String mContext) {
+        this.emergeContext = mContext;
     }
 
 }
