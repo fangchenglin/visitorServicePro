@@ -30,12 +30,11 @@ public class SuitController {
      * 上传文件
      */
     @PostMapping("/upload")
-    public DataResult upload(@RequestParam("file") MultipartFile file) throws Exception {
+    public void upload(@RequestParam("file") MultipartFile file) throws Exception {
         //上传文件
         String suffix = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf("."));
         byte[] data = file.getBytes();
         System.out.println("img+"+data);
-        return DataResult.successByData(data);
     }
     /*
 
