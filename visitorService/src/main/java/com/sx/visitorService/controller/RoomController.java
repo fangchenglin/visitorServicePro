@@ -1,11 +1,15 @@
 package com.sx.visitorService.controller;
 
 import com.sx.visitorService.entity.Room;
+import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.service.RoomService;
+import com.sx.visitorService.utils.PageUtil;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.sx.visitorService.DTO.RoomDTO;
 
 import javax.annotation.Resource;
 
@@ -27,13 +31,16 @@ public class RoomController {
     /**
      * 分页查询
      *
-     * @param room 筛选条件
-     * @param pageRequest      分页对象
-     * @return 查询结果
+     *
      */
-    @GetMapping
-    public ResponseEntity<Page<Room>> queryByPage(Room room, PageRequest pageRequest) {
-        return ResponseEntity.ok(this.roomService.queryByPage(room, pageRequest));
+    @PostMapping("listRoom")
+    public DataResult queryByPage(@RequestBody RoomDTO roomDTO) {
+        Long page = roomDTO.getPage();
+        Long limit = roomDTO.getLimit();
+        Long startPage = PageUtil.getStartPage(page, limit);
+        roomDTO.setPage(startPage);
+        DataResult dataResult = this.roomService.queryByPage(roomDTO);
+        return dataResult;
     }
 
     /**
@@ -80,5 +87,10 @@ public class RoomController {
         return ResponseEntity.ok(this.roomService.deleteById(id));
     }
 
+    @PostMapping("updateRoom")
+    public  DataResult updateRoom(@RequestBody Room room){
+        Room update = this.roomService.update(room);
+        return DataResult.successByData(update);
+    }
 }
 

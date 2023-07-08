@@ -1,5 +1,6 @@
 package com.sx.visitorService.dao;
 
+import com.sx.visitorService.DTO.RoomDTO;
 import com.sx.visitorService.entity.Room;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -30,7 +31,7 @@ public interface RoomDao {
      * @param pageable         分页对象
      * @return 对象列表
      */
-    List<Room> queryAllByLimit(Room room, @Param("pageable") Pageable pageable);
+    List<Room> queryAllByLimit(RoomDTO roomDTO);
 
     /**
      * 统计总行数
