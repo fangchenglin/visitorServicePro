@@ -1,14 +1,19 @@
 package com.sx.visitorService.service.impl;
 
+import com.sx.visitorService.DTO.HotelDTO;
+import com.sx.visitorService.DTO.RoomDTO;
+import com.sx.visitorService.entity.Hotel;
 import com.sx.visitorService.entity.Room;
 import com.sx.visitorService.dao.RoomDao;
 import com.sx.visitorService.service.RoomService;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * (Room)表服务实现类
@@ -40,11 +45,11 @@ public class RoomServiceImpl implements RoomService {
      * @return 查询结果
      */
     @Override
-    public Page<Room> queryByPage(Room room, PageRequest pageRequest) {
-        long total = this.roomDao.count(room);
-        return new PageImpl<>(this.roomDao.queryAllByLimit(room, pageRequest), pageRequest, total);
-    }
+    public DataResult queryByPage(RoomDTO roomDTO) {
+        long total = this.roomDao.count(roomDTO);
+        List<Room> rooms = this.roomDao.queryAllByLimit(roomDTO);
 
+        return DataResult.successByTotalData(rooms,total);    }
     /**
      * 新增数据
      *
