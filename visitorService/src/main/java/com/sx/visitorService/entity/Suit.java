@@ -126,5 +126,21 @@ public class Suit implements Serializable {
         this.state = state;
     }
 
+    @Override
+    public String toString() {
+        return "Suit{" +
+                "suitId=" + suitId +
+                ", submitId=" + submitId +
+                ", dealId=" + dealId +
+                ", submitContext='" + submitContext + '\'' +
+                ", submitIma='" + submitIma + '\'' +
+                ", submitVideo='" + submitVideo + '\'' +
+                ", assess=" + assess +
+                ", dealContext='" + dealContext + '\'' +
+                ", dealIma='" + dealIma + '\'' +
+                ", dealVideo='" + dealVideo + '\'' +
+                ", state=" + state +
+                '}';
+    }
 }
 
