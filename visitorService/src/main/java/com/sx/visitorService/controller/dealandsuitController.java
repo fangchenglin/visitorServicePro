@@ -20,12 +20,15 @@ public class dealandsuitController {
     //提交表单
     @PostMapping("suit")
     public DataResult suit(@RequestBody Suit suit){
+        suit.setState(1);
         return suitService.suit(suit);
     }
 
     //提交表单
     @PostMapping("deal")
     public DataResult deal(@RequestBody Suit suit){
+
+        suit.setState(3);
         return suitService.deal(suit);
     }
 }
