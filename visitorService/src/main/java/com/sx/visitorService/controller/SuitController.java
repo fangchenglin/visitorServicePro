@@ -7,6 +7,7 @@ import com.sx.visitorService.utils.PageUtil;
 import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 
@@ -25,6 +26,16 @@ public class SuitController {
     @Resource
     private SuitService suitService;
 
+    /**
+     * 上传文件
+     */
+    @PostMapping("/upload")
+    public void upload(@RequestParam("file") MultipartFile file) throws Exception {
+        //上传文件
+        String suffix = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf("."));
+        byte[] data = file.getBytes();
+        System.out.println("img+"+data);
+    }
     /*
 
      */
