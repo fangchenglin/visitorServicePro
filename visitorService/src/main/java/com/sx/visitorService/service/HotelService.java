@@ -1,6 +1,9 @@
 package com.sx.visitorService.service;
 
+import com.sx.visitorService.DTO.HotelDTO;
+import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.Hotel;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
@@ -23,11 +26,10 @@ public interface HotelService {
     /**
      * 分页查询
      *
-     * @param hotel 筛选条件
-     * @param pageRequest      分页对象
+     * @param hotelDTO 筛选条件
      * @return 查询结果
      */
-    Page<Hotel> queryByPage(Hotel hotel, PageRequest pageRequest);
+    DataResult queryByPage(HotelDTO hotelDTO);
 
     /**
      * 新增数据

@@ -6,38 +6,40 @@ import java.io.Serializable;
  * (Room)实体类
  *
  * @author makejava
- * @since 2023-07-05 12:02:21
+ * @since 2023-07-07 14:41:22
  */
 public class Room implements Serializable {
-    private static final long serialVersionUID = -40856249678167819L;
+    private static final long serialVersionUID = 394139169586428561L;
     
-    private Integer rId;
+    private Integer roomId;
     
-    private Integer capcity;
+    private Integer capacity;
     
     private Integer state;
     
-    private Integer pId;
+    private Integer personId;
     
     private Integer price;
     
-    private Integer hId;
+    private Integer hotelId;
+    
+    private Integer roomNumber;
 
 
-    public Integer getRId() {
-        return rId;
+    public Integer getRoomId() {
+        return roomId;
     }
 
-    public void setRId(Integer rId) {
-        this.rId = rId;
+    public void setRoomId(Integer roomId) {
+        this.roomId = roomId;
     }
 
-    public Integer getCapcity() {
-        return capcity;
+    public Integer getCapacity() {
+        return capacity;
     }
 
-    public void setCapcity(Integer capcity) {
-        this.capcity = capcity;
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
     }
 
     public Integer getState() {
@@ -48,12 +50,12 @@ public class Room implements Serializable {
         this.state = state;
     }
 
-    public Integer getPId() {
-        return pId;
+    public Integer getPersonId() {
+        return personId;
     }
 
-    public void setPId(Integer pId) {
-        this.pId = pId;
+    public void setPersonId(Integer personId) {
+        this.personId = personId;
     }
 
     public Integer getPrice() {
@@ -64,12 +66,20 @@ public class Room implements Serializable {
         this.price = price;
     }
 
-    public Integer getHId() {
-        return hId;
+    public Integer getHotelId() {
+        return hotelId;
     }
 
-    public void setHId(Integer hId) {
-        this.hId = hId;
+    public void setHotelId(Integer hotelId) {
+        this.hotelId = hotelId;
+    }
+
+    public Integer getRoomNumber() {
+        return roomNumber;
+    }
+
+    public void setRoomNumber(Integer roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
 }

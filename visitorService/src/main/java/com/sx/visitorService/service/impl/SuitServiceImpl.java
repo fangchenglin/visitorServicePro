@@ -1,19 +1,19 @@
 package com.sx.visitorService.service.impl;
 
 import com.sx.visitorService.DTO.SuitDTO;
+import com.sx.visitorService.DTO.suitWithName;
+import com.sx.visitorService.dao.PersonDao;
 import com.sx.visitorService.entity.Person;
 import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.dao.SuitDao;
 import com.sx.visitorService.service.SuitService;
 import com.sx.visitorService.utils.result.DataResult;
-import com.sx.visitorService.utils.result.code.Code;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,7 +26,8 @@ import java.util.List;
 public class SuitServiceImpl implements SuitService {
     @Resource
     private SuitDao suitDao;
-
+    @Resource
+    private PersonDao personDao;
     @Resource
     HttpSession session;
 
@@ -52,7 +53,21 @@ public class SuitServiceImpl implements SuitService {
     public DataResult queryByPage(SuitDTO suitDTO) {
         long total = this.suitDao.count(suitDTO);
         List<Suit> suits = this.suitDao.queryAllByLimit(suitDTO);
-        return DataResult.successByTotalData(suits,total);
+        List<suitWithName> suitWithNames =new ArrayList<>();
+        for(Suit i:suits){
+            Person submit=personDao.queryById(i.getSubmitId());
+            Person dealer = personDao.queryById(i.getDealId());
+            suitWithName j= new suitWithName();
+            BeanUtils.copyProperties(i,j);
+            if(dealer!=null){
+                j.setDealerName(dealer.getPersonName());
+            }
+
+            j.setSubmitName(submit.getPersonName());
+            j.setSubmitPhone(submit.getPersonPhone());
+            suitWithNames.add(j);
+        }
+        return DataResult.successByTotalData(suitWithNames,total);
     }
 
     /**
@@ -76,7 +91,7 @@ public class SuitServiceImpl implements SuitService {
     @Override
     public Suit update(Suit suit) {
         this.suitDao.update(suit);
-        return this.queryById(suit.getSId());
+        return this.queryById(suit.getSuitId());
     }
 
     /**
@@ -92,7 +107,7 @@ public class SuitServiceImpl implements SuitService {
 
     @Override
     public DataResult deal(Suit suit) {
-        int insert_suit = suitDao.insert(suit);
+        int insert_suit = suitDao.update(suit);
         return DataResult.successByData(suit);
     }
 

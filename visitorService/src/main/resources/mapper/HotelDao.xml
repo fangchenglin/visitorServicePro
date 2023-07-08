@@ -3,44 +3,45 @@
 <mapper namespace="com.sx.visitorService.dao.HotelDao">
 
     <resultMap type="com.sx.visitorService.entity.Hotel" id="HotelMap">
-        <result property="hId" column="h_id" jdbcType="INTEGER"/>
-        <result property="hName" column="h_name" jdbcType="VARCHAR"/>
-        <result property="hPhone" column="h_phone" jdbcType="VARCHAR"/>
-        <result property="hSite" column="h_site" jdbcType="VARCHAR"/>
-        <result property="hClass" column="h_class" jdbcType="INTEGER"/>
+        <result property="hotelId" column="hotel_id" jdbcType="INTEGER"/>
+        <result property="hotelName" column="hotel_name" jdbcType="VARCHAR"/>
+        <result property="hotelPhone" column="hotel_phone" jdbcType="VARCHAR"/>
+        <result property="hotelSite" column="hotel_site" jdbcType="VARCHAR"/>
+        <result property="hotelClass" column="hotel_class" jdbcType="INTEGER"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="HotelMap">
         select
-          h_id, h_name, h_phone, h_site, h_class
+          hotel_id, hotel_name, hotel_phone, hotel_site, hotel_class
         from hotel
-        where h_id = #{hId}
+        where hotel_id = #{hotelId}
     </select>
 
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="HotelMap">
         select
-          h_id, h_name, h_phone, h_site, h_class
+          hotel_id, hotel_name, hotel_phone, hotel_site, hotel_class
         from hotel
         <where>
-            <if test="hId != null">
-                and h_id = #{hId}
+            <if test="hotelId != null">
+                and hotel_id = #{hotelId}
             </if>
-            <if test="hName != null and hName != ''">
-                and h_name = #{hName}
+            <if test="hotelName != null and hotelName != ''">
+                and hotel_name = #{hotelName}
             </if>
-            <if test="hPhone != null and hPhone != ''">
-                and h_phone = #{hPhone}
+            <if test="hotelPhone != null and hotelPhone != ''">
+                and hotel_phone = #{hotelPhone}
             </if>
-            <if test="hSite != null and hSite != ''">
-                and h_site = #{hSite}
+            <if test="hotelSite != null and hotelSite != ''">
+                and hotel_site = #{hotelSite}
             </if>
-            <if test="hClass != null">
-                and h_class = #{hClass}
+            <if test="hotelClass != null">
+                and hotel_class = #{hotelClass}
             </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
+        order by hotel_id desc
+        limit #{page}, #{limit}
     </select>
 
     <!--统计总行数-->
@@ -48,74 +49,74 @@
         select count(1)
         from hotel
         <where>
-            <if test="hId != null">
-                and h_id = #{hId}
+            <if test="hotelId != null">
+                and hotel_id = #{hotelId}
             </if>
-            <if test="hName != null and hName != ''">
-                and h_name = #{hName}
+            <if test="hotelName != null and hotelName != ''">
+                and hotel_name = #{hotelName}
             </if>
-            <if test="hPhone != null and hPhone != ''">
-                and h_phone = #{hPhone}
+            <if test="hotelPhone != null and hotelPhone != ''">
+                and hotel_phone = #{hotelPhone}
             </if>
-            <if test="hSite != null and hSite != ''">
-                and h_site = #{hSite}
+            <if test="hotelSite != null and hotelSite != ''">
+                and hotel_site = #{hotelSite}
             </if>
-            <if test="hClass != null">
-                and h_class = #{hClass}
+            <if test="hotelClass != null">
+                and hotel_class = #{hotelClass}
             </if>
         </where>
     </select>
 
     <!--新增所有列-->
-    <insert id="insert" keyProperty="hId" useGeneratedKeys="true">
-        insert into hotel(h_name, h_phone, h_site, h_class)
-        values (#{hName}, #{hPhone}, #{hSite}, #{hClass})
+    <insert id="insert" keyProperty="hotelId" useGeneratedKeys="true">
+        insert into hotel(hotel_name, hotel_phone, hotel_site, hotel_class)
+        values (#{hotelName}, #{hotelPhone}, #{hotelSite}, #{hotelClass})
     </insert>
 
-    <insert id="insertBatch" keyProperty="hId" useGeneratedKeys="true">
-        insert into hotel(h_name, h_phone, h_site, h_class)
+    <insert id="insertBatch" keyProperty="hotelId" useGeneratedKeys="true">
+        insert into hotel(hotel_name, hotel_phone, hotel_site, hotel_class)
         values
         <foreach collection="entities" item="entity" separator=",">
-        (#{entity.hName}, #{entity.hPhone}, #{entity.hSite}, #{entity.hClass})
+        (#{entity.hotelName}, #{entity.hotelPhone}, #{entity.hotelSite}, #{entity.hotelClass})
         </foreach>
     </insert>
 
-    <insert id="insertOrUpdateBatch" keyProperty="hId" useGeneratedKeys="true">
-        insert into hotel(h_name, h_phone, h_site, h_class)
+    <insert id="insertOrUpdateBatch" keyProperty="hotelId" useGeneratedKeys="true">
+        insert into hotel(hotel_name, hotel_phone, hotel_site, hotel_class)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.hName}, #{entity.hPhone}, #{entity.hSite}, #{entity.hClass})
+            (#{entity.hotelName}, #{entity.hotelPhone}, #{entity.hotelSite}, #{entity.hotelClass})
         </foreach>
         on duplicate key update
-        h_name = values(h_name),
-        h_phone = values(h_phone),
-        h_site = values(h_site),
-        h_class = values(h_class)
+        hotel_name = values(hotel_name),
+        hotel_phone = values(hotel_phone),
+        hotel_site = values(hotel_site),
+        hotel_class = values(hotel_class)
     </insert>
 
     <!--通过主键修改数据-->
     <update id="update">
         update hotel
         <set>
-            <if test="hName != null and hName != ''">
-                h_name = #{hName},
+            <if test="hotelName != null and hotelName != ''">
+                hotel_name = #{hotelName},
             </if>
-            <if test="hPhone != null and hPhone != ''">
-                h_phone = #{hPhone},
+            <if test="hotelPhone != null and hotelPhone != ''">
+                hotel_phone = #{hotelPhone},
             </if>
-            <if test="hSite != null and hSite != ''">
-                h_site = #{hSite},
+            <if test="hotelSite != null and hotelSite != ''">
+                hotel_site = #{hotelSite},
             </if>
-            <if test="hClass != null">
-                h_class = #{hClass},
+            <if test="hotelClass != null">
+                hotel_class = #{hotelClass},
             </if>
         </set>
-        where h_id = #{hId}
+        where hotel_id = #{hotelId}
     </update>
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from hotel where h_id = #{hId}
+        delete from hotel where hotel_id = #{hotelId}
     </delete>
 
 </mapper>

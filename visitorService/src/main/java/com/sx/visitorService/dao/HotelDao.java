@@ -1,6 +1,9 @@
 package com.sx.visitorService.dao;
 
+import com.sx.visitorService.DTO.HotelDTO;
+import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.Hotel;
+import com.sx.visitorService.entity.Suit;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
@@ -26,11 +29,10 @@ public interface HotelDao {
     /**
      * 查询指定行数据
      *
-     * @param hotel 查询条件
-     * @param pageable         分页对象
+     * @param hotelDTO 查询条件
      * @return 对象列表
      */
-    List<Hotel> queryAllByLimit(Hotel hotel, @Param("pageable") Pageable pageable);
+    List<Hotel> queryAllByLimit(HotelDTO hotelDTO);
 
     /**
      * 统计总行数

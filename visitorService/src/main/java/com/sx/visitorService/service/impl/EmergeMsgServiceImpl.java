@@ -66,7 +66,7 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
     @Override
     public EmergeMsg update(EmergeMsg emergeMsg) {
         this.emergeMsgDao.update(emergeMsg);
-        return this.queryById(emergeMsg.getMId());
+        return this.queryById(emergeMsg.getEmergeId());
     }
 
     /**
