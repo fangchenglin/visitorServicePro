@@ -5,20 +5,20 @@ import java.util.List;
 
 public class Path {
 
-    private List<Character> path=new ArrayList<>();
+    private List<String> path=new ArrayList<>();
 
     public Path() {
     }
 
-    public Path(List<Character> path) {
+    public Path(List<String> path) {
         this.path = path;
     }
 
-    public List<Character> getPath() {
+    public List<String> getPath() {
         return path;
     }
 
-    public void setPath(List<Character> path) {
+    public void setPath(List<String> path) {
         this.path = path;
     }
 
