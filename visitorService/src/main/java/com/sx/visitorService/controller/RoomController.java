@@ -43,12 +43,6 @@ public class RoomController {
         return dataResult;
     }
 
-    @PostMapping("countRoom")
-    public DataResult countRoom(@RequestBody Room room) {
-
-        DataResult dataResult = this.roomService.count(room);
-        return dataResult;
-    }
 
     /**
      * 通过主键查询单条数据

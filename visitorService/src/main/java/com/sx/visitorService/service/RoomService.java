@@ -54,6 +54,5 @@ public interface RoomService {
      * @return 是否成功
      */
     boolean deleteById(Integer roomId);
-
-    DataResult count(Room room);
+    
 }

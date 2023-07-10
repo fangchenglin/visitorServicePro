@@ -83,9 +83,4 @@ public class RoomServiceImpl implements RoomService {
         return this.roomDao.deleteById(roomId) > 0;
     }
 
-    @Override
-    public DataResult count(Room room) {
-        long total= roomDao.count(room);
-        return  DataResult.successByDatas(total);
-    }
 }
