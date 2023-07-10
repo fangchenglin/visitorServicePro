@@ -55,4 +55,5 @@ public interface RoomService {
      */
     boolean deleteById(Integer roomId);
 
+    DataResult count(Room room);
 }
