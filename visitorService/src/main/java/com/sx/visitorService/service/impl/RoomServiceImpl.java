@@ -40,16 +40,14 @@ public class RoomServiceImpl implements RoomService {
     /**
      * 分页查询
      *
-     * @param room 筛选条件
-     * @param pageRequest      分页对象
      * @return 查询结果
      */
     @Override
     public DataResult queryByPage(RoomDTO roomDTO) {
         long total = this.roomDao.count(roomDTO);
         List<Room> rooms = this.roomDao.queryAllByLimit(roomDTO);
-
         return DataResult.successByTotalData(rooms,total);    }
+
     /**
      * 新增数据
      *
@@ -83,5 +81,11 @@ public class RoomServiceImpl implements RoomService {
     @Override
     public boolean deleteById(Integer roomId) {
         return this.roomDao.deleteById(roomId) > 0;
+    }
+
+    @Override
+    public DataResult count(Room room) {
+        long total= roomDao.count(room);
+        return  DataResult.successByDatas(total);
     }
 }
