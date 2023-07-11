@@ -48,6 +48,11 @@ public class RoomServiceImpl implements RoomService {
         List<Room> rooms = this.roomDao.queryAllByLimit(roomDTO);
         return DataResult.successByTotalData(rooms,total);    }
 
+    @Override
+    public DataResult count(Room room) {
+        long total= roomDao.count(room);
+        return  DataResult.successByDatas(total);
+    }
     /**
      * 新增数据
      *
