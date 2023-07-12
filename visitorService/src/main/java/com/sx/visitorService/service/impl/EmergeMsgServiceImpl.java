@@ -57,8 +57,9 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
             if(examine!=null){
                 j.setExamineName(examine.getPersonName());
             }
-
-            j.setPublishName(publish.getPersonName());
+            if(publish!=null) {
+                j.setPublishName(publish.getPersonName());
+            }
             emergeMsgWithNames.add(j);
         }
         return DataResult.successByTotalData(emergeMsgWithNames,total);
