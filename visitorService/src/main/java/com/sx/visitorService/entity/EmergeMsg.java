@@ -85,5 +85,17 @@ public class EmergeMsg implements Serializable {
         this.state = state;
     }
 
+    @Override
+    public String toString() {
+        return "EmergeMsg{" +
+                "emergeId=" + emergeId +
+                ", emergeContext='" + emergeContext + '\'' +
+                ", publishId=" + publishId +
+                ", examineId=" + examineId +
+                ", publishTime=" + publishTime +
+                ", expireTime=" + expireTime +
+                ", state=" + state +
+                '}';
+    }
 }
 

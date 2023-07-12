@@ -50,6 +50,7 @@ public class EmergeMsgController {
     @PostMapping("publishMsg")
     public DataResult publishMsg(@RequestBody EmergeMsg emergeMsg) {
         emergeMsg.setState(1);
+        System.out.println(emergeMsg.getExpireTime());
         return emergeMsgService.publish(emergeMsg);
     }
     @PostMapping("listMsg")
