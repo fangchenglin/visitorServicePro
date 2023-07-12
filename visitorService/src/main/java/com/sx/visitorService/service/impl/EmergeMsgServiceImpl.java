@@ -18,6 +18,7 @@ import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -42,7 +43,10 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
     public EmergeMsg queryById(Integer mId) {
         return this.emergeMsgDao.queryById(mId);
     }
-
+    public  boolean isDateGreaterThanCurrent(Date date) {
+        Date currentTime = new Date();
+        return date.after(currentTime);
+    }
     @Override
     public DataResult queryByPage(EmergeMsgDTO emergeMsgDTO) {
         long total = this.emergeMsgDao.count(emergeMsgDTO);
@@ -59,6 +63,13 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
             }
             if(publish!=null) {
                 j.setPublishName(publish.getPersonName());
+            }
+            if(isDateGreaterThanCurrent(j.getExpireTime())){
+                j.setState(4);
+                EmergeMsg emergeMsg1=new EmergeMsg();
+                emergeMsg1.setEmergeId(j.getEmergeId());
+                emergeMsg1.setState(4);
+                emergeMsgDao.update(emergeMsg1);
             }
             emergeMsgWithNames.add(j);
         }

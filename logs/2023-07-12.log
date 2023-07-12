@@ -545,3 +545,396 @@ java.sql.SQLSyntaxErrorException: Unknown column 'emerge_ids' in 'order clause'
 [INFO]2023-07-12 15:01:15,316 - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO]2023-07-12 15:01:15,317 - Initializing Servlet 'dispatcherServlet'
 [INFO]2023-07-12 15:01:15,318 - Completed initialization in 1 ms
+[INFO]2023-07-12 15:07:43,565 - Restarting due to 18 class path changes (0 additions, 16 deletions, 2 modifications)
+[INFO]2023-07-12 15:07:44,184 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:44,184 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:07:44,185 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO]2023-07-12 15:07:44,192 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:44,194 - Destroying ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:44,198 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:07:44,201 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 15:07:44,208 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 15:07:44,379 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 16828 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:07:44,379 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:07:44,610 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:07:44,624 - Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:07:44,794 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:07:44,794 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:44,795 - Starting service [Tomcat]
+[INFO]2023-07-12 15:07:44,795 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:07:44,828 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:07:44,828 - Root WebApplicationContext: initialization completed in 447 ms
+[INFO]2023-07-12 15:07:44,866 - HikariPool-2 - Starting...
+[INFO]2023-07-12 15:07:46,035 - HikariPool-2 - Start completed.
+[INFO]2023-07-12 15:07:46,056 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:07:46,063 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:07:46,063 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:07:46,155 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 15:07:46,258 - LiveReload server is running on port 35729
+[INFO]2023-07-12 15:07:46,265 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:46,269 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-12 15:07:46,276 - Started VisitorServiceApplication in 1.938 seconds (JVM running for 399.963)
+[INFO]2023-07-12 15:07:46,277 - Condition evaluation unchanged
+[INFO]2023-07-12 15:07:46,407 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 8064 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:07:46,408 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:07:46,442 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-12 15:07:46,442 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-12 15:07:46,974 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:07:46,999 - Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:07:47,572 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:07:47,578 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:47,579 - Starting service [Tomcat]
+[INFO]2023-07-12 15:07:47,579 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:07:47,693 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:07:47,693 - Root WebApplicationContext: initialization completed in 1251 ms
+[INFO]2023-07-12 15:07:47,721 - Restarting due to 16 class path changes (16 additions, 0 deletions, 0 modifications)
+[INFO]2023-07-12 15:07:47,799 - HikariPool-1 - Starting...
+[INFO]2023-07-12 15:07:48,357 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:48,357 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:07:48,362 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:48,364 - Destroying ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:48,365 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:07:48,366 - HikariPool-2 - Shutdown initiated...
+[INFO]2023-07-12 15:07:48,462 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 15:07:48,532 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 15:07:48,572 - HikariPool-2 - Shutdown completed.
+[INFO]2023-07-12 15:07:48,641 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 15:07:48,736 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 16828 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:07:48,736 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:07:48,759 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:07:48,870 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:07:48,881 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:07:48,950 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:07:48,964 - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:07:49,124 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:07:49,125 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:49,125 - Starting service [Tomcat]
+[INFO]2023-07-12 15:07:49,125 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:07:49,161 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:07:49,161 - Root WebApplicationContext: initialization completed in 422 ms
+[INFO]2023-07-12 15:07:49,193 - HikariPool-3 - Starting...
+[WARN]2023-07-12 15:07:49,203 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN]2023-07-12 15:07:49,509 - Unable to start LiveReload server
+[INFO]2023-07-12 15:07:49,528 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:49,545 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-12 15:07:49,566 - Started VisitorServiceApplication in 3.517 seconds (JVM running for 4.743)
+[INFO]2023-07-12 15:07:49,780 - HikariPool-3 - Start completed.
+[INFO]2023-07-12 15:07:49,800 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:07:49,807 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:07:49,807 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:07:49,893 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 15:07:49,988 - LiveReload server is running on port 35729
+[INFO]2023-07-12 15:07:49,994 - Starting ProtocolHandler ["http-nio-8080"]
+[WARN]2023-07-12 15:07:49,996 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO]2023-07-12 15:07:49,997 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:07:49,997 - HikariPool-3 - Shutdown initiated...
+[INFO]2023-07-12 15:07:50,346 - HikariPool-3 - Shutdown completed.
+[INFO]2023-07-12 15:07:50,347 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:50,347 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:07:50,351 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:07:50,351 - Destroying ProtocolHandler ["http-nio-8080"]
+[ERROR]2023-07-12 15:07:50,388 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO]2023-07-12 15:08:02,405 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-07-12 15:08:02,405 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-07-12 15:08:02,406 - Completed initialization in 1 ms
+[INFO]2023-07-12 15:16:31,846 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:16:31,849 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 15:16:31,856 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 15:16:34,062 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 16828 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:16:34,062 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:16:34,343 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:16:34,359 - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:16:34,554 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:16:34,554 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:16:34,555 - Starting service [Tomcat]
+[INFO]2023-07-12 15:16:34,555 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:16:34,581 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:16:34,581 - Root WebApplicationContext: initialization completed in 517 ms
+[INFO]2023-07-12 15:16:34,611 - HikariPool-4 - Starting...
+[INFO]2023-07-12 15:16:35,063 - HikariPool-4 - Start completed.
+[INFO]2023-07-12 15:16:35,090 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:16:35,097 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:16:35,098 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:16:35,103 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emergeMsgController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.sx.visitorService.service.EmergeMsgService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+[INFO]2023-07-12 15:16:35,103 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:16:35,103 - HikariPool-4 - Shutdown initiated...
+[INFO]2023-07-12 15:16:35,104 - HikariPool-4 - Shutdown completed.
+[INFO]2023-07-12 15:16:35,105 - Stopping service [Tomcat]
+[ERROR]2023-07-12 15:16:35,121 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.sx.visitorService.service.EmergeMsgService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.sx.visitorService.service.EmergeMsgService' in your configuration.
+
+[INFO]2023-07-12 15:16:36,620 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 16828 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:16:36,620 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:16:36,653 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 13156 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:16:36,653 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:16:36,684 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-12 15:16:36,685 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-12 15:16:36,805 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:16:36,819 - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:16:36,988 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:16:36,988 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:16:36,988 - Starting service [Tomcat]
+[INFO]2023-07-12 15:16:36,988 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:16:37,019 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:16:37,020 - Root WebApplicationContext: initialization completed in 398 ms
+[INFO]2023-07-12 15:16:37,047 - HikariPool-5 - Starting...
+[INFO]2023-07-12 15:16:37,202 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:16:37,226 - Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:16:37,535 - HikariPool-5 - Start completed.
+[INFO]2023-07-12 15:16:37,557 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:16:37,564 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:16:37,564 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:16:37,656 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 15:16:37,752 - LiveReload server is running on port 35729
+[INFO]2023-07-12 15:16:37,759 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:16:37,762 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-12 15:16:37,768 - Started VisitorServiceApplication in 1.181 seconds (JVM running for 931.456)
+[INFO]2023-07-12 15:16:37,770 - Condition evaluation unchanged
+[INFO]2023-07-12 15:16:37,787 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:16:37,793 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:16:37,794 - Starting service [Tomcat]
+[INFO]2023-07-12 15:16:37,794 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:16:37,904 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:16:37,904 - Root WebApplicationContext: initialization completed in 1219 ms
+[INFO]2023-07-12 15:16:38,015 - HikariPool-1 - Starting...
+[INFO]2023-07-12 15:16:38,565 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 15:16:38,632 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 15:16:38,728 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 15:16:38,817 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:16:38,924 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:16:38,933 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:16:39,212 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN]2023-07-12 15:16:39,513 - Unable to start LiveReload server
+[INFO]2023-07-12 15:16:39,529 - Starting ProtocolHandler ["http-nio-8080"]
+[WARN]2023-07-12 15:16:39,533 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO]2023-07-12 15:16:39,535 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:16:39,537 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 15:16:39,864 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-07-12 15:16:39,864 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-07-12 15:16:39,865 - Completed initialization in 1 ms
+[INFO]2023-07-12 15:16:39,873 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 15:16:39,874 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:16:39,874 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:16:39,877 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:16:39,878 - Destroying ProtocolHandler ["http-nio-8080"]
+[ERROR]2023-07-12 15:16:39,909 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO]2023-07-12 15:18:25,193 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+[INFO]2023-07-12 15:18:25,822 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:18:25,823 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:18:25,824 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO]2023-07-12 15:18:25,831 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:18:25,833 - Destroying ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:18:25,835 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:18:25,835 - HikariPool-5 - Shutdown initiated...
+[INFO]2023-07-12 15:18:25,838 - HikariPool-5 - Shutdown completed.
+[INFO]2023-07-12 15:18:26,005 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 16828 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:18:26,005 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:18:26,197 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:18:26,210 - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:18:26,361 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:18:26,361 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:18:26,361 - Starting service [Tomcat]
+[INFO]2023-07-12 15:18:26,362 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:18:26,391 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:18:26,392 - Root WebApplicationContext: initialization completed in 385 ms
+[INFO]2023-07-12 15:18:26,418 - HikariPool-6 - Starting...
+[INFO]2023-07-12 15:18:26,935 - HikariPool-6 - Start completed.
+[INFO]2023-07-12 15:18:26,954 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:18:26,960 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:18:26,961 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:18:27,034 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 15:18:27,131 - LiveReload server is running on port 35729
+[INFO]2023-07-12 15:18:27,136 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:18:27,140 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-12 15:18:27,147 - Started VisitorServiceApplication in 1.174 seconds (JVM running for 1040.834)
+[INFO]2023-07-12 15:18:27,148 - Condition evaluation unchanged
+[INFO]2023-07-12 15:18:27,152 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 3384 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:18:27,152 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:18:27,184 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-12 15:18:27,184 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-12 15:18:27,680 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:18:27,704 - Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:18:28,262 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:18:28,267 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:18:28,268 - Starting service [Tomcat]
+[INFO]2023-07-12 15:18:28,268 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:18:28,380 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:18:28,381 - Root WebApplicationContext: initialization completed in 1196 ms
+[INFO]2023-07-12 15:18:28,485 - HikariPool-1 - Starting...
+[INFO]2023-07-12 15:18:29,136 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 15:18:29,204 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 15:18:29,301 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 15:18:29,395 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:18:29,505 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:18:29,514 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:18:29,800 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN]2023-07-12 15:18:30,109 - Unable to start LiveReload server
+[INFO]2023-07-12 15:18:30,124 - Starting ProtocolHandler ["http-nio-8080"]
+[WARN]2023-07-12 15:18:30,128 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO]2023-07-12 15:18:30,130 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:18:30,132 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 15:18:30,473 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 15:18:30,474 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:18:30,474 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:18:30,478 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:18:30,478 - Destroying ProtocolHandler ["http-nio-8080"]
+[ERROR]2023-07-12 15:18:30,510 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO]2023-07-12 15:18:36,138 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-07-12 15:18:36,139 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-07-12 15:18:36,140 - Completed initialization in 1 ms
+[INFO]2023-07-12 15:21:00,970 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+[INFO]2023-07-12 15:21:01,589 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:01,590 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:21:01,591 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO]2023-07-12 15:21:01,598 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:01,600 - Destroying ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:01,601 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:21:01,602 - HikariPool-6 - Shutdown initiated...
+[INFO]2023-07-12 15:21:01,606 - HikariPool-6 - Shutdown completed.
+[INFO]2023-07-12 15:21:01,729 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 16828 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:21:01,729 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:21:01,929 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:21:01,942 - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:21:02,101 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:21:02,102 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:02,102 - Starting service [Tomcat]
+[INFO]2023-07-12 15:21:02,102 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:21:02,131 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:21:02,131 - Root WebApplicationContext: initialization completed in 400 ms
+[INFO]2023-07-12 15:21:02,161 - HikariPool-7 - Starting...
+[INFO]2023-07-12 15:21:02,646 - HikariPool-7 - Start completed.
+[INFO]2023-07-12 15:21:02,665 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:21:02,671 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:21:02,672 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:21:02,739 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 15:21:02,828 - LiveReload server is running on port 35729
+[INFO]2023-07-12 15:21:02,834 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:02,838 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-12 15:21:02,844 - Started VisitorServiceApplication in 1.148 seconds (JVM running for 1196.531)
+[INFO]2023-07-12 15:21:02,845 - Condition evaluation unchanged
+[INFO]2023-07-12 15:21:03,331 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 15880 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:21:03,332 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:21:03,364 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-12 15:21:03,364 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-12 15:21:03,868 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:21:03,892 - Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:21:04,288 - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+[INFO]2023-07-12 15:21:04,440 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:21:04,446 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:04,447 - Starting service [Tomcat]
+[INFO]2023-07-12 15:21:04,447 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:21:04,558 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:21:04,558 - Root WebApplicationContext: initialization completed in 1194 ms
+[INFO]2023-07-12 15:21:04,664 - HikariPool-1 - Starting...
+[INFO]2023-07-12 15:21:04,892 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:04,892 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:21:04,904 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:04,906 - Destroying ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:04,907 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:21:04,908 - HikariPool-7 - Shutdown initiated...
+[INFO]2023-07-12 15:21:05,110 - HikariPool-7 - Shutdown completed.
+[INFO]2023-07-12 15:21:05,215 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 16828 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-12 15:21:05,215 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 15:21:05,240 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 15:21:05,313 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 15:21:05,398 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 15:21:05,411 - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 15:21:05,415 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 15:21:05,510 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:21:05,569 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-12 15:21:05,569 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:05,569 - Starting service [Tomcat]
+[INFO]2023-07-12 15:21:05,569 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-12 15:21:05,599 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-12 15:21:05,599 - Root WebApplicationContext: initialization completed in 383 ms
+[INFO]2023-07-12 15:21:05,621 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:21:05,625 - HikariPool-8 - Starting...
+[INFO]2023-07-12 15:21:05,630 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:21:05,920 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 15:21:06,112 - HikariPool-8 - Start completed.
+[INFO]2023-07-12 15:21:06,132 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 15:21:06,139 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 15:21:06,140 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 15:21:06,212 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN]2023-07-12 15:21:06,230 - Unable to start LiveReload server
+[INFO]2023-07-12 15:21:06,245 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:06,261 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-12 15:21:06,280 - Started VisitorServiceApplication in 3.284 seconds (JVM running for 4.504)
+[INFO]2023-07-12 15:21:06,315 - LiveReload server is running on port 35729
+[INFO]2023-07-12 15:21:06,322 - Starting ProtocolHandler ["http-nio-8080"]
+[WARN]2023-07-12 15:21:06,323 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO]2023-07-12 15:21:06,323 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:21:06,324 - HikariPool-8 - Shutdown initiated...
+[INFO]2023-07-12 15:21:06,600 - HikariPool-8 - Shutdown completed.
+[INFO]2023-07-12 15:21:06,601 - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:06,601 - Stopping service [Tomcat]
+[INFO]2023-07-12 15:21:06,605 - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-12 15:21:06,605 - Destroying ProtocolHandler ["http-nio-8080"]
+[ERROR]2023-07-12 15:21:06,613 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO]2023-07-12 15:22:16,754 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-07-12 15:22:16,754 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-07-12 15:22:16,755 - Completed initialization in 1 ms

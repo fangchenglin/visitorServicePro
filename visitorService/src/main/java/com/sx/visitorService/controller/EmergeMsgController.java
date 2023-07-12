@@ -30,7 +30,7 @@ public class EmergeMsgController {
     private EmergeMsgService emergeMsgService;
     @PostMapping("examineMsg")
     public  DataResult examineMsg(@RequestBody EmergeMsg emergeMsg){
-        emergeMsg.setState(2);
+        emergeMsg.setState(3);
         EmergeMsg update = this.emergeMsgService.update(emergeMsg);
         return DataResult.successByData(update);
     }
