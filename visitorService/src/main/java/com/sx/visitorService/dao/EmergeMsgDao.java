@@ -1,6 +1,9 @@
 package com.sx.visitorService.dao;
 
+import com.sx.visitorService.DTO.EmergeMsgDTO;
+import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.EmergeMsg;
+import com.sx.visitorService.entity.Suit;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
@@ -26,11 +29,10 @@ public interface EmergeMsgDao {
     /**
      * 查询指定行数据
      *
-     * @param emergeMsg 查询条件
-     * @param pageable         分页对象
+
      * @return 对象列表
      */
-    List<EmergeMsg> queryAllByLimit(EmergeMsg emergeMsg, @Param("pageable") Pageable pageable);
+    List<EmergeMsg> queryAllByLimit(EmergeMsgDTO emergeMsgDTO);
 
     /**
      * 统计总行数

@@ -48,7 +48,8 @@
                 and state = #{state}
             </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
+        order by emerge_ids desc
+        limit #{page}, #{limit}
     </select>
 
     <!--统计总行数-->

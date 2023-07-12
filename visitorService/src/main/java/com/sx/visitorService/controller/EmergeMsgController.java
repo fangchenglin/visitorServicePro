@@ -1,7 +1,11 @@
 package com.sx.visitorService.controller;
 
+import com.sx.visitorService.DTO.EmergeMsgDTO;
+import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.EmergeMsg;
 import com.sx.visitorService.service.EmergeMsgService;
+import com.sx.visitorService.utils.PageUtil;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
@@ -23,18 +27,21 @@ public class EmergeMsgController {
      */
     @Resource
     private EmergeMsgService emergeMsgService;
-
-    /**
-     * 分页查询
-     *
-     * @param emergeMsg 筛选条件
-     * @param pageRequest      分页对象
-     * @return 查询结果
-     */
-    @GetMapping
-    public ResponseEntity<Page<EmergeMsg>> queryByPage(EmergeMsg emergeMsg, PageRequest pageRequest) {
-        return ResponseEntity.ok(this.emergeMsgService.queryByPage(emergeMsg, pageRequest));
+    @PostMapping("publishMsg")
+    public DataResult publishMsg(@RequestBody EmergeMsg emergeMsg) {
+        emergeMsg.setState(1);
+        return emergeMsgService.publish(emergeMsg);
     }
+    @PostMapping("listMsg")
+    public DataResult queryByPage(@RequestBody EmergeMsgDTO emergeMsgDTO) {
+        Long page = emergeMsgDTO.getPage();
+        Long limit = emergeMsgDTO.getLimit();
+        Long startPage = PageUtil.getStartPage(page, limit);
+        emergeMsgDTO.setPage(startPage);
+        DataResult dataResult = this.emergeMsgService.queryByPage(emergeMsgDTO);
+        return dataResult;
+    }
+
 
     /**
      * 通过主键查询单条数据
