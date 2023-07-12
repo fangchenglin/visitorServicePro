@@ -38,4 +38,13 @@ class EmergeMsgControllerTest {
         System.out.println(dataResult.toString());
 
     }
+
+    @Test
+    public void undoMsg() {
+        EmergeMsg emergeMsg = new EmergeMsg();
+        emergeMsg.setEmergeId(4);
+
+        DataResult dataResult=emergeMsgController.undoMsg(emergeMsg);
+        System.out.println(dataResult.toString());
+    }
 }

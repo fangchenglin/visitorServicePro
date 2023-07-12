@@ -3,6 +3,7 @@ package com.sx.visitorService.controller;
 import com.sx.visitorService.DTO.EmergeMsgDTO;
 import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.EmergeMsg;
+import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.service.EmergeMsgService;
 import com.sx.visitorService.utils.PageUtil;
 import com.sx.visitorService.utils.result.DataResult;
@@ -27,6 +28,19 @@ public class EmergeMsgController {
      */
     @Resource
     private EmergeMsgService emergeMsgService;
+    @PostMapping("changeMsg")
+    public  DataResult changeMsg(@RequestBody EmergeMsg emergeMsg){
+        EmergeMsg update = this.emergeMsgService.update(emergeMsg);
+        return DataResult.successByData(update);
+    }
+    @PostMapping("undoMsg")
+    public DataResult undoMsg(@RequestBody EmergeMsg emergeMsg) {
+        boolean b= this.emergeMsgService.deleteById(emergeMsg.getEmergeId());
+        if(b){
+            return DataResult.succ();
+        }
+        return  DataResult.err();
+    }
     @PostMapping("publishMsg")
     public DataResult publishMsg(@RequestBody EmergeMsg emergeMsg) {
         emergeMsg.setState(1);
