@@ -13,7 +13,7 @@ import javax.annotation.Resource;
  * (EmergeMsg)表控制层
  *
  * @author makejava
- * @since 2023-07-05 12:01:39
+ * @since 2023-07-12 10:06:06
  */
 @RestController
 @RequestMapping("emergeMsg")

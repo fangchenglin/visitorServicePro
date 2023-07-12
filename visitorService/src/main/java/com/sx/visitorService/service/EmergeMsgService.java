@@ -8,17 +8,17 @@ import org.springframework.data.domain.PageRequest;
  * (EmergeMsg)表服务接口
  *
  * @author makejava
- * @since 2023-07-05 12:01:41
+ * @since 2023-07-12 10:06:08
  */
 public interface EmergeMsgService {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param mId 主键
+     * @param emergeId 主键
      * @return 实例对象
      */
-    EmergeMsg queryById(Integer mId);
+    EmergeMsg queryById(Integer emergeId);
 
     /**
      * 分页查询
@@ -48,9 +48,9 @@ public interface EmergeMsgService {
     /**
      * 通过主键删除数据
      *
-     * @param mId 主键
+     * @param emergeId 主键
      * @return 是否成功
      */
-    boolean deleteById(Integer mId);
+    boolean deleteById(Integer emergeId);
 
 }

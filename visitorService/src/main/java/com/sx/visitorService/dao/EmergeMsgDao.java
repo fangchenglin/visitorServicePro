@@ -10,7 +10,7 @@ import java.util.List;
  * (EmergeMsg)表数据库访问层
  *
  * @author makejava
- * @since 2023-07-05 12:01:41
+ * @since 2023-07-12 10:06:07
  */
 @Mapper
 public interface EmergeMsgDao {
@@ -18,10 +18,10 @@ public interface EmergeMsgDao {
     /**
      * 通过ID查询单条数据
      *
-     * @param mId 主键
+     * @param emergeId 主键
      * @return 实例对象
      */
-    EmergeMsg queryById(Integer mId);
+    EmergeMsg queryById(Integer emergeId);
 
     /**
      * 查询指定行数据
@@ -76,10 +76,10 @@ public interface EmergeMsgDao {
     /**
      * 通过主键删除数据
      *
-     * @param mId 主键
+     * @param emergeId 主键
      * @return 影响行数
      */
-    int deleteById(Integer mId);
+    int deleteById(Integer emergeId);
 
 }
 

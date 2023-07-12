@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * (EmergeMsg)表服务实现类
  *
  * @author makejava
- * @since 2023-07-05 12:01:41
+ * @since 2023-07-12 10:06:08
  */
 @Service("emergeMsgService")
 public class EmergeMsgServiceImpl implements EmergeMsgService {
@@ -24,12 +24,12 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
     /**
      * 通过ID查询单条数据
      *
-     * @param mId 主键
+     * @param emergeId 主键
      * @return 实例对象
      */
     @Override
-    public EmergeMsg queryById(Integer mId) {
-        return this.emergeMsgDao.queryById(mId);
+    public EmergeMsg queryById(Integer emergeId) {
+        return this.emergeMsgDao.queryById(emergeId);
     }
 
     /**
@@ -72,11 +72,11 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
     /**
      * 通过主键删除数据
      *
-     * @param mId 主键
+     * @param emergeId 主键
      * @return 是否成功
      */
     @Override
-    public boolean deleteById(Integer mId) {
-        return this.emergeMsgDao.deleteById(mId) > 0;
+    public boolean deleteById(Integer emergeId) {
+        return this.emergeMsgDao.deleteById(emergeId) > 0;
     }
 }
