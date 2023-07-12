@@ -48,7 +48,7 @@
                 and state = #{state}
             </if>
         </where>
-        order by emerge_ids desc
+        order by emerge_id desc
         limit #{page}, #{limit}
     </select>
 
