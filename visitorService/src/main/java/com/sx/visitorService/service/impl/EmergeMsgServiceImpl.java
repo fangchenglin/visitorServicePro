@@ -64,7 +64,7 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
             if(publish!=null) {
                 j.setPublishName(publish.getPersonName());
             }
-            if(isDateGreaterThanCurrent(j.getExpireTime())){
+            if(!isDateGreaterThanCurrent(j.getExpireTime())){
                 j.setState(4);
                 EmergeMsg emergeMsg1=new EmergeMsg();
                 emergeMsg1.setEmergeId(j.getEmergeId());
