@@ -114,12 +114,6 @@ public class Graph {
         addEdge("t19", "t28", 3);
         addEdge("t24", "t28", 3);
 
-
-
-
-
-
-
     }
     public static void main(String[] args) {
         Graph graph = new Graph();
@@ -129,7 +123,7 @@ public class Graph {
 
 
         // Example usage
-        List<String> path = graph.shortestPath("store1", "wheel");
+        List<String> path = graph.shortestPath("gate", "wheel");
         System.out.println("Shortest path from A to C: " + path);
 
 //        path = graph.shortestPath("B1", "J1");
