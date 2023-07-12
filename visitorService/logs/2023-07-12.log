@@ -1,0 +1,16 @@
+[INFO]2023-07-12 11:58:41,895 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 2988 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 11:58:41,896 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 11:58:42,502 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 11:58:42,532 - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 11:58:43,208 - HikariPool-1 - Starting...
+[INFO]2023-07-12 11:58:43,846 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 11:58:43,975 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 11:58:44,167 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 11:58:45,049 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 11:58:45,253 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 11:58:45,266 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 11:58:45,913 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 11:58:46,615 - Started EmergeMsgControllerTest in 5.123 seconds (JVM running for 6.161)
+[INFO]2023-07-12 11:58:47,117 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 11:58:47,119 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 11:58:47,228 - HikariPool-1 - Shutdown completed.
