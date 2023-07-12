@@ -1,5 +1,6 @@
 package com.sx.visitorService.controller;
 
+import com.sx.visitorService.DTO.EmergeMsgDTO;
 import com.sx.visitorService.entity.EmergeMsg;
 import com.sx.visitorService.utils.result.DataResult;
 import org.junit.jupiter.api.Test;
@@ -21,8 +22,20 @@ class EmergeMsgControllerTest {
         emergeMsg.setState(1);
         emergeMsg.setEmergeContext("test");
 
-        DataResult dataResult = emergeMsgController.publishMsg(emergeMsg);
-        System.out.println(dataResult);
+        DataResult dataResult = emergeMsgController.publishMsg(emergeMsg);        System.out.println("test");
+        System.out.println("test"+dataResult.toString());
+
+    }
+
+    @Test
+    public void testlistMsg() {
+        EmergeMsgDTO emergeMsgDTO = new EmergeMsgDTO();
+        emergeMsgDTO.setPage(1L);
+        emergeMsgDTO.setLimit(4L);
+
+
+        DataResult dataResult = emergeMsgController.queryByPage(emergeMsgDTO);
+        System.out.println(dataResult.toString());
 
     }
 }

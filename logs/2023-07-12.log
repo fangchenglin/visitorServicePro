@@ -415,3 +415,5 @@ java.sql.SQLSyntaxErrorException: Unknown column 'emerge_ids' in 'order clause'
 [INFO]2023-07-12 12:15:03,408 - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO]2023-07-12 12:15:03,409 - Initializing Servlet 'dispatcherServlet'
 [INFO]2023-07-12 12:15:03,409 - Completed initialization in 0 ms
+[WARN]2023-07-12 12:29:29,821 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e9a9f38 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[WARN]2023-07-12 12:30:30,951 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e229a29 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
