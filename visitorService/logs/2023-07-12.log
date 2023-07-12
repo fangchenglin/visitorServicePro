@@ -325,3 +325,7 @@ Caused by: org.springframework.beans.factory.BeanCreationNotAllowedException: Er
 [INFO]2023-07-12 14:47:06,004 - Initialized JPA EntityManagerFactory for persistence unit 'default'
 [WARN]2023-07-12 14:47:06,683 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 [INFO]2023-07-12 14:47:07,479 - Started EmergeMsgControllerTest in 5.381 seconds (JVM running for 6.557)
+[WARN]2023-07-12 15:00:59,128 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m54s406ms226µs900ns).
+[INFO]2023-07-12 15:00:59,259 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:00:59,261 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 15:00:59,513 - HikariPool-1 - Shutdown completed.
