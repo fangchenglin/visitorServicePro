@@ -1,5 +1,7 @@
 package com.sx.visitorService.DTO;
 import com.sx.visitorService.entity.Performing;
+import org.apache.ibatis.annotations.Mapper;
+
 
 public class PerformingDTO extends Performing {
     private Long page;//当前页码

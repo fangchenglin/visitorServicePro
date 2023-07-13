@@ -1,5 +1,7 @@
 package com.sx.visitorService.DTO;
 import com.sx.visitorService.entity.Restaurant;
+import org.apache.ibatis.annotations.Mapper;
+
 
 public class RestaurantDTO extends Restaurant {
     private Long page;//当前页码

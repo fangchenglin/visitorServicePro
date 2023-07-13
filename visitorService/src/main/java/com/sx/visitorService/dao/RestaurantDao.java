@@ -3,6 +3,7 @@ package com.sx.visitorService.dao;
 import com.sx.visitorService.DTO.HotelDTO;
 import com.sx.visitorService.DTO.RestaurantDTO;
 import com.sx.visitorService.entity.Restaurant;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
  * @author makejava
  * @since 2023-07-13 09:53:14
  */
+@Mapper
 public interface RestaurantDao {
 
     /**
