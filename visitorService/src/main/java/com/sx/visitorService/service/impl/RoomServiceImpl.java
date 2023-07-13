@@ -1,14 +1,19 @@
 package com.sx.visitorService.service.impl;
 
+import com.sx.visitorService.DTO.HotelDTO;
+import com.sx.visitorService.DTO.RoomDTO;
+import com.sx.visitorService.entity.Hotel;
 import com.sx.visitorService.entity.Room;
 import com.sx.visitorService.dao.RoomDao;
 import com.sx.visitorService.service.RoomService;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * (Room)表服务实现类
@@ -35,16 +40,19 @@ public class RoomServiceImpl implements RoomService {
     /**
      * 分页查询
      *
-     * @param room 筛选条件
-     * @param pageRequest      分页对象
      * @return 查询结果
      */
     @Override
-    public Page<Room> queryByPage(Room room, PageRequest pageRequest) {
-        long total = this.roomDao.count(room);
-        return new PageImpl<>(this.roomDao.queryAllByLimit(room, pageRequest), pageRequest, total);
-    }
+    public DataResult queryByPage(RoomDTO roomDTO) {
+        long total = this.roomDao.count(roomDTO);
+        List<Room> rooms = this.roomDao.queryAllByLimit(roomDTO);
+        return DataResult.successByTotalData(rooms,total);    }
 
+    @Override
+    public DataResult count(Room room) {
+        long total= roomDao.count(room);
+        return  DataResult.successByDatas(total);
+    }
     /**
      * 新增数据
      *
@@ -79,4 +87,5 @@ public class RoomServiceImpl implements RoomService {
     public boolean deleteById(Integer roomId) {
         return this.roomDao.deleteById(roomId) > 0;
     }
+
 }

@@ -48,7 +48,7 @@
                 and room_number = #{roomNumber}
             </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
+        limit #{page}, #{limit}
     </select>
 
     <!--统计总行数-->

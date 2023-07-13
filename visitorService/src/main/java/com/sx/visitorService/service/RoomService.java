@@ -1,6 +1,8 @@
 package com.sx.visitorService.service;
 
+import com.sx.visitorService.DTO.RoomDTO;
 import com.sx.visitorService.entity.Room;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
@@ -27,7 +29,7 @@ public interface RoomService {
      * @param pageRequest      分页对象
      * @return 查询结果
      */
-    Page<Room> queryByPage(Room room, PageRequest pageRequest);
+    DataResult queryByPage(RoomDTO roomDTO);
 
     /**
      * 新增数据
@@ -53,4 +55,5 @@ public interface RoomService {
      */
     boolean deleteById(Integer roomId);
 
+    DataResult count(Room room);
 }
