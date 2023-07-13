@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sx.visitorService.dao.RestaurantDao">
+
+    <resultMap type="com.sx.visitorService.entity.Restaurant" id="RestaurantMap">
+        <result property="restaurantId" column="restaurant_id" jdbcType="INTEGER"/>
+        <result property="restaurantName" column="restaurant_name" jdbcType="VARCHAR"/>
+        <result property="restaurantPhone" column="restaurant_phone" jdbcType="VARCHAR"/>
+        <result property="restaurantSite" column="restaurant_site" jdbcType="VARCHAR"/>
+        <result property="restaurantType" column="restaurant_type" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="RestaurantMap">
+        select
+          restaurant_id, restaurant_name, restaurant_phone, restaurant_site, restaurant_type
+        from restaurant
+        where restaurant_id = #{restaurantId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="RestaurantMap">
+        select
+          restaurant_id, restaurant_name, restaurant_phone, restaurant_site, restaurant_type
+        from restaurant
+        <where>
+            <if test="restaurantId != null">
+                and restaurant_id = #{restaurantId}
+            </if>
+            <if test="restaurantName != null and restaurantName != ''">
+                and restaurant_name = #{restaurantName}
+            </if>
+            <if test="restaurantPhone != null and restaurantPhone != ''">
+                and restaurant_phone = #{restaurantPhone}
+            </if>
+            <if test="restaurantSite != null and restaurantSite != ''">
+                and restaurant_site = #{restaurantSite}
+            </if>
+            <if test="restaurantType != null">
+                and restaurant_type = #{restaurantType}
+            </if>
+        </where>
+        order by restaurant_id desc
+        limit #{page}, #{limit}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from restaurant
+        <where>
+            <if test="restaurantId != null">
+                and restaurant_id = #{restaurantId}
+            </if>
+            <if test="restaurantName != null and restaurantName != ''">
+                and restaurant_name = #{restaurantName}
+            </if>
+            <if test="restaurantPhone != null and restaurantPhone != ''">
+                and restaurant_phone = #{restaurantPhone}
+            </if>
+            <if test="restaurantSite != null and restaurantSite != ''">
+                and restaurant_site = #{restaurantSite}
+            </if>
+            <if test="restaurantType != null">
+                and restaurant_type = #{restaurantType}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="restaurantId" useGeneratedKeys="true">
+        insert into restaurant(restaurant_name, restaurant_phone, restaurant_site, restaurant_type)
+        values (#{restaurantName}, #{restaurantPhone}, #{restaurantSite}, #{restaurantType})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="restaurantId" useGeneratedKeys="true">
+        insert into restaurant(restaurant_name, restaurant_phone, restaurant_site, restaurant_type)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.restaurantName}, #{entity.restaurantPhone}, #{entity.restaurantSite}, #{entity.restaurantType})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="restaurantId" useGeneratedKeys="true">
+        insert into restaurant(restaurant_name, restaurant_phone, restaurant_site, restaurant_type)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.restaurantName}, #{entity.restaurantPhone}, #{entity.restaurantSite}, #{entity.restaurantType})
+        </foreach>
+        on duplicate key update
+        restaurant_name = values(restaurant_name),
+        restaurant_phone = values(restaurant_phone),
+        restaurant_site = values(restaurant_site),
+        restaurant_type = values(restaurant_type)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update restaurant
+        <set>
+            <if test="restaurantName != null and restaurantName != ''">
+                restaurant_name = #{restaurantName},
+            </if>
+            <if test="restaurantPhone != null and restaurantPhone != ''">
+                restaurant_phone = #{restaurantPhone},
+            </if>
+            <if test="restaurantSite != null and restaurantSite != ''">
+                restaurant_site = #{restaurantSite},
+            </if>
+            <if test="restaurantType != null">
+                restaurant_type = #{restaurantType},
+            </if>
+        </set>
+        where restaurant_id = #{restaurantId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from restaurant where restaurant_id = #{restaurantId}
+    </delete>
+
+</mapper>
+

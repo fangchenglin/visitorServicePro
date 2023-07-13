@@ -62,9 +62,10 @@ public class SuitServiceImpl implements SuitService {
             if(dealer!=null){
                 j.setDealerName(dealer.getPersonName());
             }
-
-            j.setSubmitName(submit.getPersonName());
-            j.setSubmitPhone(submit.getPersonPhone());
+            if(submit!=null) {
+                j.setSubmitName(submit.getPersonName());
+                j.setSubmitPhone(submit.getPersonPhone());
+            }
             suitWithNames.add(j);
         }
         return DataResult.successByTotalData(suitWithNames,total);

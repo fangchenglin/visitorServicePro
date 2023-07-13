@@ -1,0 +1,331 @@
+[INFO]2023-07-12 11:58:41,895 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 2988 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 11:58:41,896 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 11:58:42,502 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 11:58:42,532 - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 11:58:43,208 - HikariPool-1 - Starting...
+[INFO]2023-07-12 11:58:43,846 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 11:58:43,975 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 11:58:44,167 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 11:58:45,049 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 11:58:45,253 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 11:58:45,266 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 11:58:45,913 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 11:58:46,615 - Started EmergeMsgControllerTest in 5.123 seconds (JVM running for 6.161)
+[INFO]2023-07-12 11:58:47,117 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 11:58:47,119 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 11:58:47,228 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 12:21:40,578 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 4544 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 12:21:40,579 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 12:21:41,170 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 12:21:41,199 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 12:21:41,866 - HikariPool-1 - Starting...
+[INFO]2023-07-12 12:21:42,498 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 12:21:42,613 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 12:21:42,794 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 12:21:43,639 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 12:21:43,834 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 12:21:43,848 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 12:21:44,488 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 12:21:45,167 - Started EmergeMsgControllerTest in 4.983 seconds (JVM running for 6.044)
+[INFO]2023-07-12 12:21:46,049 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 12:21:46,050 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 12:21:46,310 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 12:24:34,285 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 452 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 12:24:34,286 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 12:24:34,867 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 12:24:34,894 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 12:24:35,531 - HikariPool-1 - Starting...
+[INFO]2023-07-12 12:24:36,250 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 12:24:36,364 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 12:24:36,544 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 12:24:37,405 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 12:24:37,600 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 12:24:37,615 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 12:24:38,245 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 12:24:38,959 - Started EmergeMsgControllerTest in 5.063 seconds (JVM running for 6.09)
+[INFO]2023-07-12 12:24:39,457 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 12:24:39,459 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 12:24:39,621 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 12:28:25,281 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 14280 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 12:28:25,282 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 12:28:25,876 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 12:28:25,904 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 12:28:26,558 - HikariPool-1 - Starting...
+[INFO]2023-07-12 12:28:27,216 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 12:28:27,331 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 12:28:27,509 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 12:28:28,364 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 12:28:28,560 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 12:28:28,574 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 12:28:29,196 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 12:28:29,891 - Started EmergeMsgControllerTest in 5.007 seconds (JVM running for 6.048)
+[INFO]2023-07-12 12:28:30,401 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 12:28:30,403 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 12:28:30,768 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 12:28:59,453 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 10024 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 12:28:59,453 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 12:29:00,053 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 12:29:00,080 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 12:29:00,721 - HikariPool-1 - Starting...
+[INFO]2023-07-12 12:29:01,377 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 12:29:01,493 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 12:29:01,673 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 12:29:02,539 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 12:29:02,732 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 12:29:02,746 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 12:29:03,379 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 12:29:04,074 - Started EmergeMsgControllerTest in 5.019 seconds (JVM running for 6.068)
+[INFO]2023-07-12 12:29:04,558 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 12:29:04,559 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 12:29:04,707 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 12:29:44,163 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 7892 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 12:29:44,164 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 12:29:44,922 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 12:29:44,952 - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 12:29:45,657 - HikariPool-1 - Starting...
+[INFO]2023-07-12 12:29:46,317 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 12:29:46,438 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 12:29:46,640 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 12:29:47,515 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 12:29:47,717 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 12:29:47,731 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 12:29:48,446 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 12:29:49,274 - Started EmergeMsgControllerTest in 5.563 seconds (JVM running for 6.73)
+[INFO]2023-07-12 12:30:12,631 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 12:30:12,633 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 12:30:12,975 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 12:30:32,455 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 11564 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 12:30:32,456 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 12:30:33,110 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 12:30:33,140 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 12:30:33,867 - HikariPool-1 - Starting...
+[INFO]2023-07-12 12:30:35,207 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 12:30:35,331 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 12:30:35,535 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 12:30:36,415 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 12:30:36,631 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 12:30:36,647 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 12:30:37,388 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 12:30:38,223 - Started EmergeMsgControllerTest in 6.224 seconds (JVM running for 7.402)
+[INFO]2023-07-12 12:31:06,970 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 12:31:06,972 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 12:31:06,993 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 12:31:09,913 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 17528 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 12:31:09,914 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 12:31:10,543 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 12:31:10,573 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 12:31:11,291 - HikariPool-1 - Starting...
+[INFO]2023-07-12 12:31:11,918 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 12:31:12,041 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 12:31:12,242 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 12:31:13,122 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 12:31:13,338 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 12:31:13,352 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 12:31:14,058 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 12:31:14,881 - Started EmergeMsgControllerTest in 5.416 seconds (JVM running for 6.589)
+[INFO]2023-07-12 12:32:02,439 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 12:32:02,441 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 12:32:02,452 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 14:31:50,424 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 9592 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 14:31:50,425 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 14:31:51,519 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 14:31:51,563 - Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 14:31:52,575 - HikariPool-1 - Starting...
+[INFO]2023-07-12 14:31:53,239 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 14:31:53,410 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 14:31:53,677 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 14:31:54,770 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 14:31:55,061 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 14:31:55,084 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 14:31:55,834 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 14:31:56,702 - Started EmergeMsgControllerTest in 7.094 seconds (JVM running for 8.367)
+[INFO]2023-07-12 14:31:56,710 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 14:31:56,713 - HikariPool-1 - Shutdown initiated...
+[ERROR]2023-07-12 14:31:56,754 - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@60db1c0e] to prepare test instance [com.sx.visitorService.controller.EmergeMsgControllerTest@45571cfc]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.sx.visitorService.controller.EmergeMsgControllerTest': Unsatisfied dependency expressed through field 'emergeMsgController'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'emergeMsgController': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$379/567294307.execute(Unknown Source)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$378/1058876963.accept(Unknown Source)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator$$Lambda$259/413601558.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$377/1670313965.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$372/1309335839.get(Unknown Source)
+	at java.util.Optional.orElseGet(Unknown Source)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor$$Lambda$277/1587819720.getTestInstances(Unknown Source)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda$371/405896924.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$219/1392906938.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$234/21257599.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$230/326298949.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$229/876926621.invoke(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$228/1073533248.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$234/21257599.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$230/326298949.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$229/876926621.invoke(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$228/1073533248.execute(Unknown Source)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator$$Lambda$172/1250391581.accept(Unknown Source)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'emergeMsgController': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 93 common frames omitted
+[INFO]2023-07-12 14:31:56,785 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 14:44:21,211 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 9492 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 14:44:21,212 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 14:44:21,830 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 14:44:21,859 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 14:44:22,561 - HikariPool-1 - Starting...
+[INFO]2023-07-12 14:44:24,031 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 14:44:24,150 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 14:44:24,330 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 14:44:25,172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 14:44:25,372 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 14:44:25,385 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 14:44:26,017 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 14:44:26,684 - Started EmergeMsgControllerTest in 5.87 seconds (JVM running for 6.902)
+[INFO]2023-07-12 14:44:27,212 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 14:44:27,214 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 14:44:27,854 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 14:44:33,650 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 9036 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 14:44:33,651 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 14:44:34,287 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 14:44:34,316 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 14:44:35,038 - HikariPool-1 - Starting...
+[INFO]2023-07-12 14:44:35,883 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 14:44:36,006 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 14:44:36,215 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 14:44:37,325 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 14:44:37,519 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 14:44:37,533 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 14:44:38,223 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 14:44:39,028 - Started EmergeMsgControllerTest in 5.827 seconds (JVM running for 7.336)
+[INFO]2023-07-12 14:44:52,625 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 14:44:52,627 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 14:44:53,304 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 14:45:14,622 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 10200 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 14:45:14,623 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 14:45:15,259 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 14:45:15,289 - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 14:45:16,069 - HikariPool-1 - Starting...
+[INFO]2023-07-12 14:45:16,768 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 14:45:16,890 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 14:45:17,091 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 14:45:17,931 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 14:45:18,135 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 14:45:18,150 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 14:45:18,836 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 14:45:19,663 - Started EmergeMsgControllerTest in 5.507 seconds (JVM running for 6.709)
+[INFO]2023-07-12 14:45:44,749 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 14:45:44,751 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 14:45:45,944 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 14:45:50,469 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 5204 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 14:45:50,470 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 14:45:51,110 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 14:45:51,141 - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 14:45:51,847 - HikariPool-1 - Starting...
+[INFO]2023-07-12 14:45:52,483 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 14:45:52,604 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 14:45:52,807 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 14:45:53,663 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 14:45:53,864 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 14:45:53,879 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 14:45:54,558 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 14:45:55,357 - Started EmergeMsgControllerTest in 5.343 seconds (JVM running for 6.522)
+[WARN]2023-07-12 14:46:57,357 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s773ms239µs700ns).
+[INFO]2023-07-12 14:46:57,378 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 14:46:57,380 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 14:46:57,627 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-12 14:47:02,545 - Starting EmergeMsgControllerTest using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 18352 (started by 20147 in C:\Users\20147\Desktop\visitorServicePro\visitorService)
+[INFO]2023-07-12 14:47:02,546 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-12 14:47:03,153 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-12 14:47:03,182 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-12 14:47:03,878 - HikariPool-1 - Starting...
+[INFO]2023-07-12 14:47:04,620 - HikariPool-1 - Start completed.
+[INFO]2023-07-12 14:47:04,743 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-12 14:47:04,943 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-12 14:47:05,795 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-12 14:47:05,990 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-12 14:47:06,004 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-12 14:47:06,683 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-12 14:47:07,479 - Started EmergeMsgControllerTest in 5.381 seconds (JVM running for 6.557)
+[WARN]2023-07-12 15:00:59,128 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m54s406ms226µs900ns).
+[INFO]2023-07-12 15:00:59,259 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-12 15:00:59,261 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-12 15:00:59,513 - HikariPool-1 - Shutdown completed.

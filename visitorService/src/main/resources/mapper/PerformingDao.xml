@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sx.visitorService.dao.PerformingDao">
+
+    <resultMap type="com.sx.visitorService.entity.Performing" id="PerformingMap">
+        <result property="performingId" column="performing_id" jdbcType="INTEGER"/>
+        <result property="performingName" column="performing_name" jdbcType="VARCHAR"/>
+        <result property="performingSite" column="performing_site" jdbcType="VARCHAR"/>
+        <result property="performingTime" column="performing_time" jdbcType="VARCHAR"/>
+        <result property="performingPhone" column="performing_phone" jdbcType="VARCHAR"/>
+        <result property="performingContext" column="performing_context" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="PerformingMap">
+        select
+          performing_id, performing_name, performing_site, performing_time, performing_phone, performing_context
+        from performing
+        where performing_id = #{performingId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="PerformingMap">
+        select
+          performing_id, performing_name, performing_site, performing_time, performing_phone, performing_context
+        from performing
+        <where>
+            <if test="performingId != null">
+                and performing_id = #{performingId}
+            </if>
+            <if test="performingName != null and performingName != ''">
+                and performing_name = #{performingName}
+            </if>
+            <if test="performingSite != null and performingSite != ''">
+                and performing_site = #{performingSite}
+            </if>
+            <if test="performingTime != null and performingTime != ''">
+                and performing_time = #{performingTime}
+            </if>
+            <if test="performingPhone != null and performingPhone != ''">
+                and performing_phone = #{performingPhone}
+            </if>
+            <if test="performingContext != null and performingContext != ''">
+                and performing_context = #{performingContext}
+            </if>
+        </where>
+        order by performing_id desc
+        limit #{page}, #{limit}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from performing
+        <where>
+            <if test="performingId != null">
+                and performing_id = #{performingId}
+            </if>
+            <if test="performingName != null and performingName != ''">
+                and performing_name = #{performingName}
+            </if>
+            <if test="performingSite != null and performingSite != ''">
+                and performing_site = #{performingSite}
+            </if>
+            <if test="performingTime != null and performingTime != ''">
+                and performing_time = #{performingTime}
+            </if>
+            <if test="performingPhone != null and performingPhone != ''">
+                and performing_phone = #{performingPhone}
+            </if>
+            <if test="performingContext != null and performingContext != ''">
+                and performing_context = #{performingContext}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="performingId" useGeneratedKeys="true">
+        insert into performing(performing_name, performing_site, performing_time, performing_phone, performing_context)
+        values (#{performingName}, #{performingSite}, #{performingTime}, #{performingPhone}, #{performingContext})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="performingId" useGeneratedKeys="true">
+        insert into performing(performing_name, performing_site, performing_time, performing_phone, performing_context)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.performingName}, #{entity.performingSite}, #{entity.performingTime}, #{entity.performingPhone}, #{entity.performingContext})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="performingId" useGeneratedKeys="true">
+        insert into performing(performing_name, performing_site, performing_time, performing_phone, performing_context)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.performingName}, #{entity.performingSite}, #{entity.performingTime}, #{entity.performingPhone}, #{entity.performingContext})
+        </foreach>
+        on duplicate key update
+        performing_name = values(performing_name),
+        performing_site = values(performing_site),
+        performing_time = values(performing_time),
+        performing_phone = values(performing_phone),
+        performing_context = values(performing_context)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update performing
+        <set>
+            <if test="performingName != null and performingName != ''">
+                performing_name = #{performingName},
+            </if>
+            <if test="performingSite != null and performingSite != ''">
+                performing_site = #{performingSite},
+            </if>
+            <if test="performingTime != null and performingTime != ''">
+                performing_time = #{performingTime},
+            </if>
+            <if test="performingPhone != null and performingPhone != ''">
+                performing_phone = #{performingPhone},
+            </if>
+            <if test="performingContext != null and performingContext != ''">
+                performing_context = #{performingContext},
+            </if>
+        </set>
+        where performing_id = #{performingId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from performing where performing_id = #{performingId}
+    </delete>
+
+</mapper>
+

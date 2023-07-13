@@ -5,12 +5,17 @@
     <resultMap type="com.sx.visitorService.entity.EmergeMsg" id="EmergeMsgMap">
         <result property="emergeId" column="emerge_id" jdbcType="INTEGER"/>
         <result property="emergeContext" column="emerge_context" jdbcType="VARCHAR"/>
+        <result property="publishId" column="publish_id" jdbcType="INTEGER"/>
+        <result property="examineId" column="examine_id" jdbcType="INTEGER"/>
+        <result property="publishTime" column="publish_time" jdbcType="TIMESTAMP"/>
+        <result property="expireTime" column="expire_time" jdbcType="TIMESTAMP"/>
+        <result property="state" column="state" jdbcType="INTEGER"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="EmergeMsgMap">
         select
-          emerge_id, emerge_context
+          emerge_id, emerge_context, publish_id, examine_id, publish_time, expire_time, state
         from emerge_msg
         where emerge_id = #{emergeId}
     </select>
@@ -18,7 +23,7 @@
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="EmergeMsgMap">
         select
-          emerge_id, emerge_context
+          emerge_id, emerge_context, publish_id, examine_id, publish_time, expire_time, state
         from emerge_msg
         <where>
             <if test="emergeId != null">
@@ -27,8 +32,24 @@
             <if test="emergeContext != null and emergeContext != ''">
                 and emerge_context = #{emergeContext}
             </if>
+            <if test="publishId != null">
+                and publish_id = #{publishId}
+            </if>
+            <if test="examineId != null">
+                and examine_id = #{examineId}
+            </if>
+            <if test="publishTime != null">
+                and publish_time = #{publishTime}
+            </if>
+            <if test="expireTime != null">
+                and expire_time = #{expireTime}
+            </if>
+            <if test="state != null">
+                and state = #{state}
+            </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
+        order by emerge_id desc
+        limit #{page}, #{limit}
     </select>
 
     <!--统计总行数-->
@@ -42,31 +63,51 @@
             <if test="emergeContext != null and emergeContext != ''">
                 and emerge_context = #{emergeContext}
             </if>
+            <if test="publishId != null">
+                and publish_id = #{publishId}
+            </if>
+            <if test="examineId != null">
+                and examine_id = #{examineId}
+            </if>
+            <if test="publishTime != null">
+                and publish_time = #{publishTime}
+            </if>
+            <if test="expireTime != null">
+                and expire_time = #{expireTime}
+            </if>
+            <if test="state != null">
+                and state = #{state}
+            </if>
         </where>
     </select>
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="emergeId" useGeneratedKeys="true">
-        insert into emerge_msg(emerge_context)
-        values (#{emergeContext})
+        insert into emerge_msg(emerge_context, publish_id, examine_id, publish_time, expire_time, state)
+        values (#{emergeContext}, #{publishId}, #{examineId}, #{publishTime}, #{expireTime}, #{state})
     </insert>
 
     <insert id="insertBatch" keyProperty="emergeId" useGeneratedKeys="true">
-        insert into emerge_msg(emerge_context)
+        insert into emerge_msg(emerge_context, publish_id, examine_id, publish_time, expire_time, state)
         values
         <foreach collection="entities" item="entity" separator=",">
-        (#{entity.emergeContext})
+        (#{entity.emergeContext}, #{entity.publishId}, #{entity.examineId}, #{entity.publishTime}, #{entity.expireTime}, #{entity.state})
         </foreach>
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="emergeId" useGeneratedKeys="true">
-        insert into emerge_msg(emerge_context)
+        insert into emerge_msg(emerge_context, publish_id, examine_id, publish_time, expire_time, state)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.emergeContext})
+            (#{entity.emergeContext}, #{entity.publishId}, #{entity.examineId}, #{entity.publishTime}, #{entity.expireTime}, #{entity.state})
         </foreach>
         on duplicate key update
-        emerge_context = values(emerge_context)
+        emerge_context = values(emerge_context),
+        publish_id = values(publish_id),
+        examine_id = values(examine_id),
+        publish_time = values(publish_time),
+        expire_time = values(expire_time),
+        state = values(state)
     </insert>
 
     <!--通过主键修改数据-->
@@ -75,6 +116,21 @@
         <set>
             <if test="emergeContext != null and emergeContext != ''">
                 emerge_context = #{emergeContext},
+            </if>
+            <if test="publishId != null">
+                publish_id = #{publishId},
+            </if>
+            <if test="examineId != null">
+                examine_id = #{examineId},
+            </if>
+            <if test="publishTime != null">
+                publish_time = #{publishTime},
+            </if>
+            <if test="expireTime != null">
+                expire_time = #{expireTime},
+            </if>
+            <if test="state != null">
+                state = #{state},
             </if>
         </set>
         where emerge_id = #{emergeId}
