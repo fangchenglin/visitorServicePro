@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.sql.DataTruncation;
 
 /**
  * (EmergeMsg)表控制层
@@ -28,6 +29,12 @@ public class EmergeMsgController {
      */
     @Resource
     private EmergeMsgService emergeMsgService;
+    @PostMapping("modifyMsg")
+    public DataResult modifyMsg(@RequestBody EmergeMsg emergeMsg){
+        System.out.println(emergeMsg.toString());
+        EmergeMsg update = this.emergeMsgService.update(emergeMsg);
+        return DataResult.successByData(update);
+    }
     @PostMapping("examineMsg")
     public  DataResult examineMsg(@RequestBody EmergeMsg emergeMsg){
         emergeMsg.setState(3);
