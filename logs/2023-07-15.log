@@ -1,0 +1,24 @@
+[INFO]2023-07-15 09:30:04,359 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 13504 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-15 09:30:04,360 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-15 09:30:04,397 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-15 09:30:04,397 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-15 09:30:05,001 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-15 09:30:05,030 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-15 09:30:05,675 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-15 09:30:05,681 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-15 09:30:05,682 - Starting service [Tomcat]
+[INFO]2023-07-15 09:30:05,682 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-15 09:30:05,793 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-15 09:30:05,793 - Root WebApplicationContext: initialization completed in 1396 ms
+[INFO]2023-07-15 09:30:05,916 - HikariPool-1 - Starting...
+[INFO]2023-07-15 09:30:06,664 - HikariPool-1 - Start completed.
+[INFO]2023-07-15 09:30:06,778 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-15 09:30:06,912 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-15 09:30:07,023 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-15 09:30:07,152 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-15 09:30:07,163 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-15 09:30:07,520 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-15 09:30:07,845 - LiveReload server is running on port 35729
+[INFO]2023-07-15 09:30:07,859 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-15 09:30:07,876 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-15 09:30:07,896 - Started VisitorServiceApplication in 3.995 seconds (JVM running for 5.364)
