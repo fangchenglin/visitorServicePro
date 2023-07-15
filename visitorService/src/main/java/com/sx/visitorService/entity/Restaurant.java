@@ -19,7 +19,9 @@ public class Restaurant implements Serializable {
     
     private String restaurantSite;
     
-    private Integer restaurantType;
+    private String restaurantType;
+
+    private String restaurantPicture;
 
 
     public Integer getRestaurantId() {
@@ -54,13 +56,20 @@ public class Restaurant implements Serializable {
         this.restaurantSite = restaurantSite;
     }
 
-    public Integer getRestaurantType() {
+    public String getRestaurantType() {
         return restaurantType;
     }
 
-    public void setRestaurantType(Integer restaurantType) {
+    public void setRestaurantType(String restaurantType) {
         this.restaurantType = restaurantType;
     }
 
+    public String getRestaurantPicture() {
+        return restaurantPicture;
+    }
+
+    public void setRestaurantPicture(String restaurantPicture) {
+        this.restaurantPicture = restaurantPicture;
+    }
 }
 

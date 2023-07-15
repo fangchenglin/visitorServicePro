@@ -8,12 +8,13 @@
         <result property="hotelPhone" column="hotel_phone" jdbcType="VARCHAR"/>
         <result property="hotelSite" column="hotel_site" jdbcType="VARCHAR"/>
         <result property="hotelClass" column="hotel_class" jdbcType="INTEGER"/>
+        <result property="hotelPicture" column="hotel_picture" jdbcType="VARCHAR"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="HotelMap">
         select
-          hotel_id, hotel_name, hotel_phone, hotel_site, hotel_class
+          hotel_id, hotel_name, hotel_phone, hotel_site, hotel_class,hotel_picture
         from hotel
         where hotel_id = #{hotelId}
     </select>
@@ -21,7 +22,7 @@
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="HotelMap">
         select
-          hotel_id, hotel_name, hotel_phone, hotel_site, hotel_class
+          hotel_id, hotel_name, hotel_phone, hotel_site, hotel_class,hotel_picture
         from hotel
         <where>
             <if test="hotelId != null">

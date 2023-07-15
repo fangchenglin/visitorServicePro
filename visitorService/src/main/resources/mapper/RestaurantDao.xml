@@ -7,13 +7,14 @@
         <result property="restaurantName" column="restaurant_name" jdbcType="VARCHAR"/>
         <result property="restaurantPhone" column="restaurant_phone" jdbcType="VARCHAR"/>
         <result property="restaurantSite" column="restaurant_site" jdbcType="VARCHAR"/>
-        <result property="restaurantType" column="restaurant_type" jdbcType="INTEGER"/>
+        <result property="restaurantType" column="restaurant_type" jdbcType="VARCHAR"/>
+        <result property="restaurantPicture" column="restaurant_picture" jdbcType="VARCHAR"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="RestaurantMap">
         select
-          restaurant_id, restaurant_name, restaurant_phone, restaurant_site, restaurant_type
+          restaurant_id, restaurant_name, restaurant_phone, restaurant_site, restaurant_type,restaurant_picture
         from restaurant
         where restaurant_id = #{restaurantId}
     </select>
@@ -21,7 +22,7 @@
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="RestaurantMap">
         select
-          restaurant_id, restaurant_name, restaurant_phone, restaurant_site, restaurant_type
+          restaurant_id, restaurant_name, restaurant_phone, restaurant_site, restaurant_type,restaurant_picture
         from restaurant
         <where>
             <if test="restaurantId != null">

@@ -21,6 +21,7 @@ public class Hotel implements Serializable {
     
     private Integer hotelClass;
 
+    private String hotelPicture;
 
     public Integer getHotelId() {
         return hotelId;
@@ -62,5 +63,12 @@ public class Hotel implements Serializable {
         this.hotelClass = hClass;
     }
 
+    public String getHotelPicture() {
+        return hotelPicture;
+    }
+
+    public void setHotelPicture(String hotelPicture) {
+        this.hotelPicture = hotelPicture;
+    }
 }
 

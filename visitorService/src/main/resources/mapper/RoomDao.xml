@@ -23,7 +23,7 @@
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="RoomMap">
         select
-          room_id, capacity, state, person_id, price, hotel_id, room_number
+          room_id, capacity, state, person_id, price, hotel_id, room_number,start_time,end_time,hotel_name
         from room
         <where>
             <if test="roomId != null">
@@ -130,6 +130,12 @@
             </if>
             <if test="roomNumber != null">
                 room_number = #{roomNumber},
+            </if>
+            <if test="startTime != null">
+                start_time = #{startTime},
+            </if>
+            <if test="endTime != null">
+                end_time = #{endTime},
             </if>
         </set>
         where room_id = #{roomId}
