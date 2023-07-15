@@ -26,10 +26,7 @@ public interface RestaurantDao {
     Restaurant queryById(Integer restaurantId);
 
     /**
-     * 查询指定行数据
-     *
-     * @param restaurant 查询条件
-     * @param pageable         分页对象
+     * 查询指定行数
      * @return 对象列表
      */
     List<Restaurant> queryAllByLimit(RestaurantDTO restaurantDTO);

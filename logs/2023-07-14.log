@@ -1,0 +1,583 @@
+[INFO]2023-07-14 09:42:57,408 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 10360 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-14 09:42:57,409 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-14 09:42:57,447 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-14 09:42:57,447 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-14 09:42:58,103 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-14 09:42:58,131 - Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-14 09:42:58,810 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-14 09:42:58,817 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-14 09:42:58,819 - Starting service [Tomcat]
+[INFO]2023-07-14 09:42:58,819 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-14 09:42:58,937 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-14 09:42:58,938 - Root WebApplicationContext: initialization completed in 1490 ms
+[INFO]2023-07-14 09:42:59,064 - HikariPool-1 - Starting...
+[INFO]2023-07-14 09:42:59,954 - HikariPool-1 - Start completed.
+[INFO]2023-07-14 09:43:00,051 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-14 09:43:00,184 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-14 09:43:00,308 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-14 09:43:00,449 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-14 09:43:00,461 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-14 09:43:00,829 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-14 09:43:01,153 - LiveReload server is running on port 35729
+[INFO]2023-07-14 09:43:01,170 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-14 09:43:01,189 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-14 09:43:01,208 - Started VisitorServiceApplication in 4.314 seconds (JVM running for 5.671)
+[INFO]2023-07-14 09:43:21,078 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-07-14 09:43:21,078 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-07-14 09:43:21,079 - Completed initialization in 1 ms
+[INFO]2023-07-14 14:36:48,483 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 11332 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-14 14:36:48,484 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-14 14:36:48,515 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-14 14:36:48,515 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-14 14:36:49,058 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-14 14:36:49,084 - Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-14 14:36:49,671 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-14 14:36:49,678 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-14 14:36:49,679 - Starting service [Tomcat]
+[INFO]2023-07-14 14:36:49,679 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-14 14:36:49,798 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-14 14:36:49,798 - Root WebApplicationContext: initialization completed in 1282 ms
+[INFO]2023-07-14 14:36:49,913 - HikariPool-1 - Starting...
+[INFO]2023-07-14 14:36:50,593 - HikariPool-1 - Start completed.
+[INFO]2023-07-14 14:36:50,719 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-14 14:36:50,838 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-14 14:36:50,956 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-14 14:36:51,092 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-14 14:36:51,104 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-14 14:36:51,424 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-14 14:36:51,727 - LiveReload server is running on port 35729
+[INFO]2023-07-14 14:36:51,744 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-14 14:36:51,768 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-14 14:36:51,788 - Started VisitorServiceApplication in 3.648 seconds (JVM running for 4.77)
+[INFO]2023-07-14 14:58:00,465 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-07-14 14:58:00,465 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-07-14 14:58:00,466 - Completed initialization in 1 ms
+[INFO]2023-07-14 23:01:20,637 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 17816 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-14 23:01:20,638 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-14 23:01:20,689 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-14 23:01:20,689 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-14 23:01:21,547 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-14 23:01:21,586 - Finished Spring Data repository scanning in 26 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-14 23:01:22,518 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-14 23:01:22,525 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-14 23:01:22,527 - Starting service [Tomcat]
+[INFO]2023-07-14 23:01:22,527 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-14 23:01:22,686 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-14 23:01:22,686 - Root WebApplicationContext: initialization completed in 1997 ms
+[INFO]2023-07-14 23:01:22,859 - HikariPool-1 - Starting...
+[INFO]2023-07-14 23:01:23,563 - HikariPool-1 - Start completed.
+[INFO]2023-07-14 23:01:23,709 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-14 23:01:23,910 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-14 23:01:24,058 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-14 23:01:24,256 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-14 23:01:24,270 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-14 23:01:24,773 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-14 23:01:25,243 - LiveReload server is running on port 35729
+[INFO]2023-07-14 23:01:25,268 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-14 23:01:25,291 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-14 23:01:25,318 - Started VisitorServiceApplication in 5.26 seconds (JVM running for 6.961)
+[INFO]2023-07-14 23:03:24,251 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-07-14 23:03:24,251 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-07-14 23:03:24,252 - Completed initialization in 1 ms
+[WARN]2023-07-14 23:05:42,211 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:05:54,534 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:06:18,006 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:10:10,565 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:10:49,384 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:11:15,468 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:12:57,175 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:13:10,609 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:14:22,254 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:15:34,603 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:16:51,723 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:17:56,106 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:20:47,886 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:21:12,240 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:30:02,554 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[ERROR]2023-07-14 23:30:56,378 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+### The error may exist in file [C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes\mapper\EmergeMsgDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update emerge_msg                    where emerge_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at com.sun.proxy.$Proxy110.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at sun.reflect.GeneratedMethodAccessor60.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at com.sun.proxy.$Proxy91.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:142)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy92.update(Unknown Source)
+	at com.sx.visitorService.service.impl.EmergeMsgServiceImpl.update(EmergeMsgServiceImpl.java:100)
+	at com.sx.visitorService.controller.EmergeMsgController.modifyMsg(EmergeMsgController.java:34)
+	at com.sx.visitorService.controller.EmergeMsgController$$FastClassBySpringCGLIB$$323451c3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sx.visitorService.aop.AroundCut.checkSession(AroundCut.java:40)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sx.visitorService.controller.EmergeMsgController$$EnhancerBySpringCGLIB$$a8cb1d88.modifyMsg(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:85)
+	at com.sx.visitorService.config.CorsFilter.doFilter(CorsFilter.java:60)
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR]2023-07-14 23:31:00,457 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+### The error may exist in file [C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes\mapper\EmergeMsgDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update emerge_msg                    where emerge_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at com.sun.proxy.$Proxy110.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at sun.reflect.GeneratedMethodAccessor60.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at com.sun.proxy.$Proxy91.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:142)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy92.update(Unknown Source)
+	at com.sx.visitorService.service.impl.EmergeMsgServiceImpl.update(EmergeMsgServiceImpl.java:100)
+	at com.sx.visitorService.controller.EmergeMsgController.modifyMsg(EmergeMsgController.java:34)
+	at com.sx.visitorService.controller.EmergeMsgController$$FastClassBySpringCGLIB$$323451c3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sx.visitorService.aop.AroundCut.checkSession(AroundCut.java:40)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sx.visitorService.controller.EmergeMsgController$$EnhancerBySpringCGLIB$$a8cb1d88.modifyMsg(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:85)
+	at com.sx.visitorService.config.CorsFilter.doFilter(CorsFilter.java:60)
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR]2023-07-14 23:31:19,791 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+### The error may exist in file [C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes\mapper\EmergeMsgDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update emerge_msg                    where emerge_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at com.sun.proxy.$Proxy110.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at sun.reflect.GeneratedMethodAccessor60.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at com.sun.proxy.$Proxy91.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:142)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy92.update(Unknown Source)
+	at com.sx.visitorService.service.impl.EmergeMsgServiceImpl.update(EmergeMsgServiceImpl.java:100)
+	at com.sx.visitorService.controller.EmergeMsgController.modifyMsg(EmergeMsgController.java:34)
+	at com.sx.visitorService.controller.EmergeMsgController$$FastClassBySpringCGLIB$$323451c3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sx.visitorService.aop.AroundCut.checkSession(AroundCut.java:40)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sx.visitorService.controller.EmergeMsgController$$EnhancerBySpringCGLIB$$a8cb1d88.modifyMsg(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:85)
+	at com.sx.visitorService.config.CorsFilter.doFilter(CorsFilter.java:60)
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR]2023-07-14 23:32:25,136 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+### The error may exist in file [C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes\mapper\EmergeMsgDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update emerge_msg                    where emerge_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where emerge_id = null' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at com.sun.proxy.$Proxy110.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at sun.reflect.GeneratedMethodAccessor60.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at com.sun.proxy.$Proxy91.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:142)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy92.update(Unknown Source)
+	at com.sx.visitorService.service.impl.EmergeMsgServiceImpl.update(EmergeMsgServiceImpl.java:100)
+	at com.sx.visitorService.controller.EmergeMsgController.modifyMsg(EmergeMsgController.java:34)
+	at com.sx.visitorService.controller.EmergeMsgController$$FastClassBySpringCGLIB$$323451c3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sx.visitorService.aop.AroundCut.checkSession(AroundCut.java:40)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.sx.visitorService.controller.EmergeMsgController$$EnhancerBySpringCGLIB$$a8cb1d88.modifyMsg(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:85)
+	at com.sx.visitorService.config.CorsFilter.doFilter(CorsFilter.java:60)
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[WARN]2023-07-14 23:32:56,463 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:36:52,521 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:38:08,978 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-14 10:54:55": not a valid representation (error: Failed to parse Date value '2023-07-14 10:54:55': Cannot parse date "2023-07-14 10:54:55": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[WARN]2023-07-14 23:41:39,892 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-15 07:38:46": not a valid representation (error: Failed to parse Date value '2023-07-15 07:38:46': Cannot parse date "2023-07-15 07:38:46": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-15 07:38:46": not a valid representation (error: Failed to parse Date value '2023-07-15 07:38:46': Cannot parse date "2023-07-15 07:38:46": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
+[INFO]2023-07-14 23:41:42,779 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO]2023-07-14 23:41:42,781 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-07-14 23:41:42,784 - HikariPool-1 - Shutdown completed.
+[INFO]2023-07-14 23:41:47,800 - Starting VisitorServiceApplication using Java 1.8.0_51 on DESKTOP-MQS6FMF with PID 7056 (C:\Users\20147\Desktop\visitorServicePro\visitorService\target\classes started by 20147 in C:\Users\20147\Desktop\visitorServicePro)
+[INFO]2023-07-14 23:41:47,801 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-07-14 23:41:47,832 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-07-14 23:41:47,833 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-07-14 23:41:48,348 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO]2023-07-14 23:41:48,374 - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[INFO]2023-07-14 23:41:48,934 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-07-14 23:41:48,940 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-14 23:41:48,941 - Starting service [Tomcat]
+[INFO]2023-07-14 23:41:48,942 - Starting Servlet engine: [Apache Tomcat/9.0.76]
+[INFO]2023-07-14 23:41:49,047 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-07-14 23:41:49,047 - Root WebApplicationContext: initialization completed in 1214 ms
+[INFO]2023-07-14 23:41:49,168 - HikariPool-1 - Starting...
+[INFO]2023-07-14 23:41:49,936 - HikariPool-1 - Start completed.
+[INFO]2023-07-14 23:41:50,005 - HHH000412: Hibernate ORM core version 5.6.15.Final
+[INFO]2023-07-14 23:41:50,105 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO]2023-07-14 23:41:50,204 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO]2023-07-14 23:41:50,320 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2023-07-14 23:41:50,330 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN]2023-07-14 23:41:50,670 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO]2023-07-14 23:41:50,981 - LiveReload server is running on port 35729
+[INFO]2023-07-14 23:41:50,997 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-07-14 23:41:51,016 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-07-14 23:41:51,034 - Started VisitorServiceApplication in 3.571 seconds (JVM running for 4.676)
+[INFO]2023-07-14 23:41:54,427 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-07-14 23:41:54,427 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-07-14 23:41:54,428 - Completed initialization in 0 ms
+[WARN]2023-07-14 23:41:54,534 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-07-15 07:38:46": not a valid representation (error: Failed to parse Date value '2023-07-15 07:38:46': Cannot parse date "2023-07-15 07:38:46": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-07-15 07:38:46": not a valid representation (error: Failed to parse Date value '2023-07-15 07:38:46': Cannot parse date "2023-07-15 07:38:46": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 61] (through reference chain: com.sx.visitorService.entity.EmergeMsg["publishTime"])]
