@@ -15,7 +15,7 @@ public class Person implements Serializable {
     
     private String personName;
     /**
-     * 0：未登录用户  1：游客  2：处理  3：管理  4：审批 5：酒店
+     * 0：未登录用户  1：游客  2：处理  3：管理  4：应急信息审批 5：酒店  6：应急信息发布人员
      */
     private Integer personPower;
     

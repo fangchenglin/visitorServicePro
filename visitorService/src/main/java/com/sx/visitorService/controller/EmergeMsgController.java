@@ -1,19 +1,25 @@
 package com.sx.visitorService.controller;
 
+import com.sx.visitorService.DTO.EmergeMsgDTO;
+import com.sx.visitorService.DTO.SuitDTO;
 import com.sx.visitorService.entity.EmergeMsg;
+import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.service.EmergeMsgService;
+import com.sx.visitorService.utils.PageUtil;
+import com.sx.visitorService.utils.result.DataResult;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.sql.DataTruncation;
 
 /**
  * (EmergeMsg)表控制层
  *
  * @author makejava
- * @since 2023-07-05 12:01:39
+ * @since 2023-07-12 10:06:06
  */
 @RestController
 @RequestMapping("emergeMsg")
@@ -23,18 +29,47 @@ public class EmergeMsgController {
      */
     @Resource
     private EmergeMsgService emergeMsgService;
-
-    /**
-     * 分页查询
-     *
-     * @param emergeMsg 筛选条件
-     * @param pageRequest      分页对象
-     * @return 查询结果
-     */
-    @GetMapping
-    public ResponseEntity<Page<EmergeMsg>> queryByPage(EmergeMsg emergeMsg, PageRequest pageRequest) {
-        return ResponseEntity.ok(this.emergeMsgService.queryByPage(emergeMsg, pageRequest));
+    @PostMapping("modifyMsg")
+    public DataResult modifyMsg(@RequestBody EmergeMsg emergeMsg){
+        System.out.println(emergeMsg.toString());
+        EmergeMsg update = this.emergeMsgService.update(emergeMsg);
+        return DataResult.successByData(update);
     }
+    @PostMapping("examineMsg")
+    public  DataResult examineMsg(@RequestBody EmergeMsg emergeMsg){
+        emergeMsg.setState(3);
+        EmergeMsg update = this.emergeMsgService.update(emergeMsg);
+        return DataResult.successByData(update);
+    }
+    @PostMapping("changeMsg")
+    public  DataResult changeMsg(@RequestBody EmergeMsg emergeMsg){
+        EmergeMsg update = this.emergeMsgService.update(emergeMsg);
+        return DataResult.successByData(update);
+    }
+    @PostMapping("undoMsg")
+    public DataResult undoMsg(@RequestBody EmergeMsg emergeMsg) {
+        boolean b= this.emergeMsgService.deleteById(emergeMsg.getEmergeId());
+        if(b){
+            return DataResult.succ();
+        }
+        return  DataResult.err();
+    }
+    @PostMapping("publishMsg")
+    public DataResult publishMsg(@RequestBody EmergeMsg emergeMsg) {
+        emergeMsg.setState(1);
+        System.out.println(emergeMsg.getExpireTime());
+        return emergeMsgService.publish(emergeMsg);
+    }
+    @PostMapping("listMsg")
+    public DataResult queryByPage(@RequestBody EmergeMsgDTO emergeMsgDTO) {
+        Long page = emergeMsgDTO.getPage();
+        Long limit = emergeMsgDTO.getLimit();
+        Long startPage = PageUtil.getStartPage(page, limit);
+        emergeMsgDTO.setPage(startPage);
+        DataResult dataResult = this.emergeMsgService.queryByPage(emergeMsgDTO);
+        return dataResult;
+    }
+
 
     /**
      * 通过主键查询单条数据

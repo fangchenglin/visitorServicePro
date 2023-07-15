@@ -1,14 +1,25 @@
 package com.sx.visitorService.service.impl;
 
+import com.sx.visitorService.DTO.EmergeMsgDTO;
+import com.sx.visitorService.DTO.EmergeMsgWithName;
+import com.sx.visitorService.DTO.suitWithName;
+import com.sx.visitorService.dao.PersonDao;
 import com.sx.visitorService.entity.EmergeMsg;
 import com.sx.visitorService.dao.EmergeMsgDao;
+import com.sx.visitorService.entity.Person;
+import com.sx.visitorService.entity.Suit;
 import com.sx.visitorService.service.EmergeMsgService;
+import com.sx.visitorService.utils.result.DataResult;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * (EmergeMsg)表服务实现类
@@ -20,7 +31,8 @@ import javax.annotation.Resource;
 public class EmergeMsgServiceImpl implements EmergeMsgService {
     @Resource
     private EmergeMsgDao emergeMsgDao;
-
+    @Resource
+    private PersonDao personDao;
     /**
      * 通过ID查询单条数据
      *
@@ -31,19 +43,39 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
     public EmergeMsg queryById(Integer mId) {
         return this.emergeMsgDao.queryById(mId);
     }
-
-    /**
-     * 分页查询
-     *
-     * @param emergeMsg 筛选条件
-     * @param pageRequest      分页对象
-     * @return 查询结果
-     */
-    @Override
-    public Page<EmergeMsg> queryByPage(EmergeMsg emergeMsg, PageRequest pageRequest) {
-        long total = this.emergeMsgDao.count(emergeMsg);
-        return new PageImpl<>(this.emergeMsgDao.queryAllByLimit(emergeMsg, pageRequest), pageRequest, total);
+    public  boolean isDateGreaterThanCurrent(Date date) {
+        Date currentTime = new Date();
+        return date.after(currentTime);
     }
+    @Override
+    public DataResult queryByPage(EmergeMsgDTO emergeMsgDTO) {
+        long total = this.emergeMsgDao.count(emergeMsgDTO);
+        List<EmergeMsg> EmergeMsgs = this.emergeMsgDao.queryAllByLimit(emergeMsgDTO);
+        List<EmergeMsgWithName> emergeMsgWithNames =new ArrayList<>();
+        for(EmergeMsg i:EmergeMsgs){
+
+            Person publish=personDao.queryById(i.getPublishId());
+            Person examine = personDao.queryById(i.getExamineId());
+            EmergeMsgWithName j= new EmergeMsgWithName();
+            BeanUtils.copyProperties(i,j);
+            if(examine!=null){
+                j.setExamineName(examine.getPersonName());
+            }
+            if(publish!=null) {
+                j.setPublishName(publish.getPersonName());
+            }
+            if(!isDateGreaterThanCurrent(j.getExpireTime())){
+                j.setState(4);
+                EmergeMsg emergeMsg1=new EmergeMsg();
+                emergeMsg1.setEmergeId(j.getEmergeId());
+                emergeMsg1.setState(4);
+                emergeMsgDao.update(emergeMsg1);
+            }
+            emergeMsgWithNames.add(j);
+        }
+        return DataResult.successByTotalData(emergeMsgWithNames,total);
+    }
+
 
     /**
      * 新增数据
@@ -79,4 +111,9 @@ public class EmergeMsgServiceImpl implements EmergeMsgService {
     public boolean deleteById(Integer mId) {
         return this.emergeMsgDao.deleteById(mId) > 0;
     }
+
+    @Override
+    public DataResult publish(EmergeMsg emergeMsg) {
+        int insert_suit = emergeMsgDao.insert(emergeMsg);
+        return DataResult.successByData(emergeMsg);    }
 }
